@@ -1,0 +1,402 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/img/background\ \(1\).png);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .kargoNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+nav .kargoNav .nav-underline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+nav .kargoNav .nav-underline li {
+  list-style: none;
+}
+nav .kargoNav .nav-underline li a {
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+nav .kargoNav .nav-underline li a:hover {
+  cursor: pointer;
+  border-bottom-color: #7b5ce1;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  width: 84%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+header nav .navDiv {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+header nav .navDiv .collapseDiv {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+header nav .navDiv .collapseDiv ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border-right: 1px solid grey;
+}
+header nav .navDiv .collapseDiv ul li {
+  list-style: none;
+}
+header nav .navDiv .collapseDiv ul li a {
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+}
+header nav .navDiv .collapseDiv ul li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #7b5ce1;
+}
+header nav .navDiv .headButton {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .navDiv .headButton span {
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+}
+header nav .navDiv .headButton span:hover {
+  color: #7b5ce1;
+  cursor: pointer;
+}
+header nav .navDiv .headButton button {
+  background-color: rgb(123, 92, 225);
+  height: 52px;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  margin-left: 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  header nav .navDiv .headButton {
+    width: 100%;
+  }
+}
+#about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .aboutMain {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 350px;
+  gap: 20px;
+}
+#about .aboutMain h1 {
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  color: rgb(123, 92, 225);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-Bold;
+  letter-spacing: 0;
+}
+#about .aboutMain .aboutText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+#about .aboutMain .aboutText h2 {
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Verdana;
+  letter-spacing: 0;
+}
+#about .aboutMain .aboutText p {
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-SemiBold;
+  letter-spacing: 0;
+}
+
+#iconsMedia {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  padding-top: 20px;
+}
+#iconsMedia .iconsMediaText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#iconsMedia .iconsMediaText span {
+  font-weight: 600;
+  font-size: 15px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: 20px;
+  text-decoration: none;
+  transform: none;
+  padding-top: 8px;
+  font-family: Nunito-Regular;
+  letter-spacing: 0;
+}
+#iconsMedia .iconsMediaText span:hover {
+  color: #7b5ce1;
+  cursor: pointer;
+}
+#iconsMedia .iconsMediaText a {
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(123, 92, 225, 0.1450980392);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+}
+#iconsMedia .iconsMediaText a:hover {
+  cursor: pointer;
+  background-color: #7b5ce1;
+}
+#iconsMedia .iconsMediaText a i {
+  color: #000;
+}
+#iconsMedia .iconsMediaText a i:hover {
+  color: white;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #7b5ce1;
+  min-height: 600px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+footer .footerList {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+}
+footer .footerList h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer .footerList p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer .footerList .footerListBorder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 20px;
+  border-radius: 20px;
+}
+footer .footerList .footerListBorder h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer .footerList .footerListBorder p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer .footerList .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footerList .footerText h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer .footerList input {
+  border: 0.5px solid #ffffff;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  padding: 0px 20px;
+  background-color: transparent;
+}
+footer .footerList .footerForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer .footerList .footerForm input {
+  border: 0.5px solid #ffffff;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  padding: 0px 20px;
+  background-color: transparent;
+}
+footer .footerList button {
+  background-color: #ff6d67;
+  min-width: 187px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0px 20px;
+  color: #fff;
+  height: 50px;
+  border: none;
+}
+footer .end {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 70px;
+  border-top: 1px solid rgb(211, 211, 211);
+}
+footer .end span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#logistic {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+#logistic .logisticMain {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#logistic .logisticMain h1 {
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  color: rgb(123, 92, 225);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-Bold;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+#logistic .contentText {
+  height: 400px; /* Uzun içeriği temsil etmek için bir değer */
+  overflow-y: scroll;
+  padding-top: 20px;
+  /* Cursor stili */
+}
+#logistic .contentText .contentText::-webkit-scrollbar {
+  width: 10px;
+}
+#logistic .contentText .contentText::-webkit-scrollbar .contentText::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+#logistic .contentText .contentText::-webkit-scrollbar .contentText::-webkit-scrollbar-thumb .contentText::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
