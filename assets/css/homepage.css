@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -144,6 +145,234 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
+#caruselSec {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+#xidmetMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  min-height: 900px;
+}
+#xidmetMain .xidmet {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  min-height: 400px;
+  background-color: #f8f7fe;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#xidmetMain .xidmet .xidmetText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+#xidmetMain .xidmet .xidmetText h1 {
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+}
+#xidmetMain .xidmet .xidmetText p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: 22px;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+}
+#xidmetMain .xidmet .xidmetText button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 52px;
+  background-color: #ff6d67;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: none;
+}
+#xidmetMain .xidmet .xidmetİmg {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#xidmetMain .xidmet .xidmetİmg img {
+  width: 60%;
+}
+
+#product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+#product .productText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 500px;
+  gap: 20px;
+}
+#product .productText .purpleTxt {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid red;
+  border-radius: 50px;
+}
+#product .productText .purpleTxt span {
+  font-size: 25px;
+  font-family: Nunito-Bold;
+  margin-left: 10px;
+  color: black;
+  font-weight: 700;
+}
+#product .productText .purpleSection {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #9d87e7;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+#product .productText .purpleSection h2 {
+  font-family: Nunito-ExtraBold;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 19px;
+  color: #fff;
+}
+#product .productText .purpleSection .purpleText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#product .productText .purpleSection .purpleText span {
+  font-family: Nunito-ExtraBold;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 19px;
+  color: #fff;
+}
+
+#smart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+#smart .smartCustoms {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 300px;
+}
+#smart .smartCustoms .smartTexts {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#smart .smartCustoms .smartTexts h2 {
+  font-weight: 700;
+  size: 25px;
+  font-style: normal;
+  color: rgb(123, 92, 225);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+}
+#smart .smartCustoms .smartTexts h1 {
+  font-weight: 700;
+  size: 25px;
+  font-style: normal;
+  color: rgb(255, 109, 103);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+}
+#smart .smartCustoms .smartTexts p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-Regular;
+  letter-spacing: 0;
+  width: 85%;
+}
+#smart .smartCustoms .smartText {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+#smart .smartCustoms .smartText h1 {
+  font-weight: 700;
+  size: 25px;
+  font-style: normal;
+  color: rgb(255, 109, 103);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+}
+#smart .smartCustoms .smartText p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-Regular;
+  letter-spacing: 0;
+}
+#smart .smartCustoms .smartCustomText img {
+  width: 100%;
+}
+
 #new {
   width: 100%;
   display: flex;
@@ -256,25 +485,19 @@ header nav .navDiv .headButton button {
   letter-spacing: 0;
 }
 
-.carousel-container {
-  max-width: 600px;
-  margin: 100px auto;
-  position: relative;
-}
-.carousel-container .carousel {
-  display: flex;
-  overflow: hidden;
-}
-.carousel-container .carousel img {
+#markaSlider {
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  border-bottom: 1px solid rgb(211, 211, 211);
 }
-.carousel-container #nextBtn {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
+#markaSlider .markaSliderSec {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #youtubeSec {

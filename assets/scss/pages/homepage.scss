@@ -5,16 +5,23 @@
   }
 
   
+//** dark-light mode
 
 
 
   body{
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
       width: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-  background-image: url(/assets/img/background\ \(1\).png);
-
+//   background-image: url(/assets/img/background\ \(1\).png);
+      &.light-theme  {
+background-image: url(/assets/img/background\ \(1\).png);
+      color: #fff;
+    }  
+   
  
  
   }
@@ -91,11 +98,11 @@
             justify-content: center;
             gap: 30px;
             border-right: 1px solid grey;
-e
+
 
             li {
                 list-style: none;
-
+                
                   &:hover {
                     cursor: pointer;
                     border-bottom: 2px solid #7b5ce1;
@@ -659,7 +666,6 @@ e
           }
           p{
               color: #fff;
-              
       font-size: 14px;
       font-weight: 600;
           }
@@ -730,8 +736,6 @@ e
           }
       }
   }
-
-
 
 
 

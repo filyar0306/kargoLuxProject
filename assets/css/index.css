@@ -84,10 +84,14 @@ header nav .navDiv .collapseDiv ul {
   gap: 30px;
   border-right: 1px solid grey;
 }
-header nav .navDiv .collapseDiv ul li {
+header nav .navDiv .collapseDiv ul e li {
   list-style: none;
 }
-header nav .navDiv .collapseDiv ul li a {
+header nav .navDiv .collapseDiv ul e li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #7b5ce1;
+}
+header nav .navDiv .collapseDiv ul e li a {
   font-weight: 500;
   font-size: 15px;
   font-style: normal;
@@ -95,10 +99,7 @@ header nav .navDiv .collapseDiv ul li a {
   line-height: normal;
   text-transform: none;
   letter-spacing: 0px;
-}
-header nav .navDiv .collapseDiv ul li a:hover {
-  cursor: pointer;
-  border-bottom: 2px solid #7b5ce1;
+  text-decoration: none;
 }
 header nav .navDiv .headButton {
   width: 40%;
@@ -419,6 +420,11 @@ header nav .navDiv .headButton button {
 #new .newSection img {
   width: 100%;
   border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+#new .newSection img:hover {
+  transform: scale(1.1);
 }
 #new .newSection a {
   text-decoration: none;
