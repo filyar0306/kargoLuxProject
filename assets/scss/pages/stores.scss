@@ -166,20 +166,74 @@ e
   }
   
   
-  #marka-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .marka-item {
-    margin: 10px;
-    display: none;
-  }
-  
-  .marka-item img {
-    max-width: 100%;
-    height: auto;
-  }
+  #stores{
+    padding: 3rem 7rem;
+    .stores-title{
+        margin-bottom: 1rem;
+        b{
+            font-size: 35px;
+        }
+    }
+    .stores-description{
+        margin-bottom: 3rem;
+        p{
+            font-size: 14px;
+            color: #7b7b93;
+        }
+    }
+    .location{
+        gap: 1.5rem;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid #f8f8f8;
+        a{
+            padding: 7px 20px;
+            font-size: 17px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #000;
+            transition: .2s ease-in-out;
+            &:hover{
+                background-color: #fef5e9;
+                border-radius: 5px;
+                color: #fd475d;
+            }
+            &:focus{
+                background-color: #fd475d;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+        .active{
+            background-color: #fd475d;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+    .store-wrapper{
+      
+        .store{
+            margin-bottom: 2rem;
+        
+            a{
+                display: flex; 
+                   background-color: #fff;
+                justify-content: center;
+                padding: 10px 10px;
+                border: 1px solid #eeeeee;
+                border-radius: 10px;
+                transition: .2s ease-in-out;
+                &:hover{
+                    border: 1px solid #cecee2;
+                    scale: 105%;
+                }
+            }
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
   
   #iconsMedia{
       width: 100%; 

@@ -139,96 +139,6 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#calculator {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom: 1px solid rgb(211, 211, 211);
-}
-#calculator .calculatorMain {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  min-height: 700px;
-}
-#calculator .calculatorMain h1 {
-  font-weight: 700;
-  size: 25px;
-  font-style: normal;
-  color: #ff6d67;
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-  width: 70%;
-}
-#calculator .calculatorMain p {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: 22px;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-  width: 70%;
-}
-#calculator .calculatorMain .calculator-container {
-  max-width: 400px;
-  padding: 20px;
-  background-color: transparent;
-  border-radius: 50px;
-  box-shadow: 5px 5px 5px 5px #9d87e7;
-}
-#calculator .calculatorMain .calculator-container form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-#calculator .calculatorMain .calculator-container form label {
-  width: calc(50% - 5px);
-  margin-top: 10px;
-}
-#calculator .calculatorMain .calculator-container form input[type=number] {
-  width: calc(50% - 5px);
-  margin-top: 5px;
-  border-radius: 10px;
-  border: none;
-  border: 1px solid rgb(194, 194, 194);
-  background-color: transparent;
-}
-#calculator .calculatorMain .calculator-container form select {
-  width: 100%;
-  margin-top: 5px;
-  border-radius: 10px;
-  border: none;
-  border: 1px solid rgb(194, 194, 194);
-  background-color: transparent;
-}
-#calculator .calculatorMain button {
-  cursor: pointer;
-  background-color: #ff6d67;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  margin-top: 10px;
-  width: 100px;
-  padding: 5px 10px;
-}
-#calculator .calculatorMain #result {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
 #xidmetMain {
   width: 100%;
   display: flex;
@@ -297,72 +207,6 @@ header nav .navDiv .headButton button {
 }
 #xidmetMain .xidmet .xidmetİmg img {
   width: 60%;
-}
-
-#product {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgb(211, 211, 211);
-}
-#product .productText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 500px;
-  gap: 20px;
-}
-#product .productText .purpleTxt {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border: 2px solid red;
-  border-radius: 50px;
-}
-#product .productText .purpleTxt:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-#product .productText .purpleTxt span {
-  font-size: 25px;
-  font-family: Nunito-Bold;
-  margin-left: 10px;
-  color: black;
-  font-weight: 700;
-}
-#product .productText .purpleSection {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #9d87e7;
-  border-radius: 20px;
-  padding: 20px 20px;
-}
-#product .productText .purpleSection h2 {
-  font-family: Nunito-ExtraBold;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 19px;
-  color: #fff;
-}
-#product .productText .purpleSection .purpleText {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#product .productText .purpleSection .purpleText span {
-  font-family: Nunito-ExtraBold;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 19px;
-  color: #fff;
 }
 
 #smart {
@@ -451,6 +295,202 @@ header nav .navDiv .headButton button {
 }
 #smart .smartCustoms .smartCustomText img {
   width: 100%;
+}
+
+#delivery {
+  border-bottom: 1px solid rgb(211, 211, 211);
+  padding: 3rem 1rem;
+}
+#delivery .deli-title {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+  align-items: center;
+  border: 2px solid red;
+  border-radius: 50px;
+}
+#delivery .deli-title b {
+  font-size: 30px;
+}
+#delivery .location {
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+#delivery .location a {
+  padding: 7px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+#delivery .location a:hover {
+  box-shadow: 0 10px 10px -2px #9d87e7;
+}
+#delivery .location .active {
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+#delivery .methods {
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+#delivery .methods a {
+  font-size: 18px;
+}
+#delivery .methods .focus {
+  border-bottom: 3px solid #fd475d;
+  color: black;
+}
+#delivery .rate-wrapper .row {
+  gap: 2rem;
+}
+#delivery .rate-wrapper .rate {
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: #f8f7fe;
+  gap: 1rem;
+  transition: 0.4s;
+  filter: drop-shadow(0px 0px 9px rgba(44, 44, 44, 0.2784313725));
+}
+#delivery .rate-wrapper .rate:hover {
+  scale: 103%;
+}
+#delivery .rate-wrapper .rate .condition {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+#delivery .rate-wrapper .rate .condition b {
+  color: rgb(0, 0, 0);
+}
+#delivery .rate-wrapper .rate .condition .icon {
+  display: flex;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #f4f4f6;
+}
+#delivery .rate-wrapper .rate .detail .normal .title {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  font-weight: 500;
+}
+#delivery .rate-wrapper .rate .detail .normal .price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ff5151;
+}
+#delivery .rate-wrapper .rate .detail .normal .price::after {
+  content: "USD";
+}
+#delivery .rate-wrapper .rate .detail .liquid .title {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  font-weight: 500;
+}
+#delivery .rate-wrapper .rate .detail .liquid .price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ff5151;
+}
+#delivery .rate-wrapper .rate .detail .liquid .price::after {
+  content: "USD";
+}
+
+#calculator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+#calculator .calculatorMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  min-height: 700px;
+}
+#calculator .calculatorMain h1 {
+  font-weight: 700;
+  size: 25px;
+  font-style: normal;
+  color: #ff6d67;
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+  width: 70%;
+}
+#calculator .calculatorMain p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: 22px;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+  width: 70%;
+}
+#calculator .calculatorMain .calculator-container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px 5px #9d87e7;
+}
+#calculator .calculatorMain .calculator-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#calculator .calculatorMain .calculator-container form label {
+  width: calc(50% - 5px);
+  margin-top: 10px;
+}
+#calculator .calculatorMain .calculator-container form input[type=number] {
+  width: calc(50% - 5px);
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: transparent;
+}
+#calculator .calculatorMain .calculator-container form select {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: transparent;
+}
+#calculator .calculatorMain button {
+  cursor: pointer;
+  background-color: #ff6d67;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100px;
+  padding: 5px 10px;
+}
+#calculator .calculatorMain #result {
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 #new {
@@ -766,110 +806,4 @@ footer .end span {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-}
-
-#delivery {
-  border-bottom: 1px solid rgb(211, 211, 211);
-  padding: 3rem 1rem;
-}
-#delivery .deli-title {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 2rem;
-  align-items: center;
-  border: 2px solid red;
-  border-radius: 50px;
-}
-#delivery .deli-title b {
-  font-size: 30px;
-}
-#delivery .location {
-  margin-bottom: 2rem;
-  gap: 1.5rem;
-}
-#delivery .location a {
-  padding: 7px 20px;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 5px;
-  transition: 0.2s ease-in-out;
-  text-decoration: none;
-  color: black;
-}
-#delivery .location a:hover {
-  box-shadow: 0 10px 10px -2px #9d87e7;
-}
-#delivery .location .active {
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
-}
-#delivery .methods {
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-#delivery .methods a {
-  font-size: 18px;
-}
-#delivery .methods .focus {
-  border-bottom: 3px solid #fd475d;
-  color: black;
-}
-#delivery .rate-wrapper .row {
-  gap: 2rem;
-}
-#delivery .rate-wrapper .rate {
-  padding: 1.5rem;
-  border-radius: 10px;
-  flex-direction: column;
-  background-color: #f8f7fe;
-  gap: 1rem;
-  transition: 0.4s;
-  filter: drop-shadow(0px 0px 9px rgba(44, 44, 44, 0.2784313725));
-}
-#delivery .rate-wrapper .rate:hover {
-  scale: 103%;
-}
-#delivery .rate-wrapper .rate .condition {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-#delivery .rate-wrapper .rate .condition b {
-  color: rgb(0, 0, 0);
-}
-#delivery .rate-wrapper .rate .condition .icon {
-  display: flex;
-  padding: 0.8rem;
-  border-radius: 50%;
-  background-color: #f4f4f6;
-}
-#delivery .rate-wrapper .rate .detail .normal .title {
-  font-size: 15px;
-  color: #000000;
-  margin-bottom: 1rem;
-  padding-right: 10px;
-  font-weight: 500;
-}
-#delivery .rate-wrapper .rate .detail .normal .price {
-  font-size: 14px;
-  font-weight: 500;
-  color: #ff5151;
-}
-#delivery .rate-wrapper .rate .detail .normal .price::after {
-  content: "USD";
-}
-#delivery .rate-wrapper .rate .detail .liquid .title {
-  font-size: 15px;
-  color: #000000;
-  margin-bottom: 1rem;
-  padding-right: 10px;
-  font-weight: 500;
-}
-#delivery .rate-wrapper .rate .detail .liquid .price {
-  font-size: 14px;
-  font-weight: 500;
-  color: #ff5151;
-}
-#delivery .rate-wrapper .rate .detail .liquid .price::after {
-  content: "USD";
 }

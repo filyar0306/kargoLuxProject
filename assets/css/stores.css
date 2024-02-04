@@ -139,19 +139,69 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#marka-container {
+#stores {
+  padding: 3rem 7rem;
+}
+#stores .stores-title {
+  margin-bottom: 1rem;
+}
+#stores .stores-title b {
+  font-size: 35px;
+}
+#stores .stores-description {
+  margin-bottom: 3rem;
+}
+#stores .stores-description p {
+  font-size: 14px;
+  color: #7b7b93;
+}
+#stores .location {
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #f8f8f8;
+}
+#stores .location a {
+  padding: 7px 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease-in-out;
+}
+#stores .location a:hover {
+  background-color: #fef5e9;
+  border-radius: 5px;
+  color: #fd475d;
+}
+#stores .location a:focus {
+  background-color: #fd475d;
+  border-radius: 5px;
+  color: white;
+}
+#stores .location .active {
+  background-color: #fd475d;
+  border-radius: 5px;
+  color: white;
+}
+#stores .store-wrapper .store {
+  margin-bottom: 2rem;
+}
+#stores .store-wrapper .store a {
   display: flex;
-  flex-wrap: wrap;
+  background-color: #fff;
+  justify-content: center;
+  padding: 10px 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
 }
-
-.marka-item {
-  margin: 10px;
-  display: none;
+#stores .store-wrapper .store a:hover {
+  border: 1px solid #cecee2;
+  scale: 105%;
 }
-
-.marka-item img {
-  max-width: 100%;
-  height: auto;
+#stores .store-wrapper .store img {
+  width: 80%;
 }
 
 #iconsMedia {
