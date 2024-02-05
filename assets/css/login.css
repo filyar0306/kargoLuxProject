@@ -86,10 +86,6 @@ header nav .navDiv .collapseDiv ul {
 header nav .navDiv .collapseDiv ul li {
   list-style: none;
 }
-header nav .navDiv .collapseDiv ul li:hover {
-  cursor: pointer;
-  border-bottom: 2px solid #7b5ce1;
-}
 header nav .navDiv .collapseDiv ul li a {
   font-weight: 500;
   font-size: 15px;
@@ -100,22 +96,26 @@ header nav .navDiv .collapseDiv ul li a {
   letter-spacing: 0px;
   text-decoration: none;
 }
+header nav .navDiv .collapseDiv ul li a:hover {
+  border-bottom: 2px solid #7b5ce1;
+}
 header nav .navDiv .headButton {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header nav .navDiv .headButton span {
+header nav .navDiv .headButton a {
   font-weight: 500;
   font-size: 15px;
   font-style: normal;
   color: rgb(0, 0, 0);
   line-height: normal;
   text-transform: none;
+  text-decoration: none;
   letter-spacing: 0px;
 }
-header nav .navDiv .headButton span:hover {
+header nav .navDiv .headButton a:hover {
   color: #7b5ce1;
   cursor: pointer;
 }
@@ -139,47 +139,101 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#mapsMain {
+#login {
+  padding-bottom: 5rem;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 600px;
 }
-#mapsMain #maps {
+#login .left {
+  width: 50%;
+  padding-top: 2rem;
+}
+#login .left .title {
+  text-align: center;
+  font-size: 22px;
+}
+#login .left .form .form-group {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  min-height: 500px;
-}
-
-#youtubeSec {
-  width: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 500px;
-  border-bottom: 1px solid rgb(211, 211, 211);
+  margin-top: 2rem;
 }
-#youtubeSec .youtubeLink {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+#login .left .form .form-group .email, #login .left .form .form-group .password {
+  width: 50%;
 }
-#youtubeSec .youtubeLink img {
+#login .left .form .form-group .email label, #login .left .form .form-group .password label {
+  font-size: 15px;
+  margin-left: 0.5rem;
+  margin-bottom: 5px;
+}
+#login .left .form .form-group .email input, #login .left .form .form-group .password input {
   width: 100%;
-  border-radius: 20px;
+  height: 45px;
+  border: 1px solid #cecee2;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-bottom: 1rem;
+  position: relative;
+  outline: none;
+}
+#login .left .form .form-group .email .hidden, #login .left .form .form-group .password .hidden {
+  color: #fd475d;
+  font-size: 12px;
+  float: right;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+#login .left .form .form-group .remember {
+  width: 48%;
+}
+#login .left .form .form-group button {
+  margin-top: 1rem;
+  width: 50%;
+  height: 45px;
+  border: 1px solid #cecee2;
+  border-radius: 10px;
+  background-color: #7b5ce1;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
-  transition: transform 0.3s;
+  outline: none;
 }
-#youtubeSec .youtubeLink img:hover {
-  transform: scale(1.1);
+#login .left .form .form-group .reset {
+  margin-top: 1rem;
+  color: #15b2ec;
+}
+#login .left .form .form-group .reset a {
+  text-decoration: none;
+}
+#login .right {
+  padding-top: 2rem;
+}
+#login .right .login-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login .right .login-image-wrap .login-image {
+  width: 90%;
+}
+#login .right .text {
+  margin-top: 2rem;
+  text-align: center;
+  user-select: none;
+}
+#login .right .text span {
+  font-size: 13px;
+}
+#login .right .text a {
+  margin-left: 0.5rem;
+  color: #15b2ec;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+}
+#login .right .text a:hover {
+  text-decoration: underline;
 }
 
 #iconsMedia {

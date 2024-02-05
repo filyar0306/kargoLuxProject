@@ -83,14 +83,14 @@ header nav .navDiv .collapseDiv ul {
   gap: 30px;
   border-right: 1px solid grey;
 }
-header nav .navDiv .collapseDiv ul e li {
+header nav .navDiv .collapseDiv ul li {
   list-style: none;
 }
-header nav .navDiv .collapseDiv ul e li:hover {
+header nav .navDiv .collapseDiv ul li:hover {
   cursor: pointer;
   border-bottom: 2px solid #7b5ce1;
 }
-header nav .navDiv .collapseDiv ul e li a {
+header nav .navDiv .collapseDiv ul li a {
   font-weight: 500;
   font-size: 15px;
   font-style: normal;
@@ -165,8 +165,6 @@ header nav .navDiv .headButton button {
   padding: 7px 20px;
   font-size: 17px;
   border-radius: 5px;
-  text-decoration: none;
-  color: #000;
   transition: 0.2s ease-in-out;
 }
 #stores .location a:hover {
@@ -184,24 +182,27 @@ header nav .navDiv .headButton button {
   border-radius: 5px;
   color: white;
 }
+#stores .store-wrapper {
+  gap: 1rem;
+}
 #stores .store-wrapper .store {
   margin-bottom: 2rem;
 }
 #stores .store-wrapper .store a {
   display: flex;
-  background-color: #fff;
   justify-content: center;
-  padding: 10px 10px;
+  padding: 2.3rem 2rem;
   border: 1px solid #eeeeee;
   border-radius: 10px;
   transition: 0.2s ease-in-out;
+  background-color: #fff;
 }
 #stores .store-wrapper .store a:hover {
   border: 1px solid #cecee2;
   scale: 105%;
 }
 #stores .store-wrapper .store img {
-  width: 80%;
+  width: 100%;
 }
 
 #iconsMedia {

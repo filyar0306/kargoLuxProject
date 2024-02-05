@@ -106,16 +106,17 @@ header nav .navDiv .headButton {
   align-items: center;
   justify-content: center;
 }
-header nav .navDiv .headButton span {
+header nav .navDiv .headButton a {
   font-weight: 500;
   font-size: 15px;
   font-style: normal;
   color: rgb(0, 0, 0);
   line-height: normal;
   text-transform: none;
+  text-decoration: none;
   letter-spacing: 0px;
 }
-header nav .navDiv .headButton span:hover {
+header nav .navDiv .headButton a:hover {
   color: #7b5ce1;
   cursor: pointer;
 }
@@ -139,7 +140,7 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#xidmetMain {
+#servicesMain {
   width: 100%;
   display: flex;
   align-items: center;
@@ -147,7 +148,7 @@ header nav .navDiv .headButton button {
   border-bottom: 1px solid rgb(211, 211, 211);
   min-height: 900px;
 }
-#xidmetMain .xidmet {
+#servicesMain .services {
   width: 100%;
   display: flex;
   align-items: center;
@@ -158,14 +159,14 @@ header nav .navDiv .headButton button {
   border-radius: 20px;
   margin-bottom: 20px;
 }
-#xidmetMain .xidmet .xidmetText {
+#servicesMain .services .servicesText {
   width: 100%;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-#xidmetMain .xidmet .xidmetText h1 {
+#servicesMain .services .servicesText h1 {
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
@@ -176,7 +177,7 @@ header nav .navDiv .headButton button {
   font-family: Nunito-ExtraBold;
   letter-spacing: 0;
 }
-#xidmetMain .xidmet .xidmetText p {
+#servicesMain .services .servicesText p {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -187,7 +188,7 @@ header nav .navDiv .headButton button {
   font-family: Nunito-ExtraBold;
   letter-spacing: 0;
 }
-#xidmetMain .xidmet .xidmetText button {
+#servicesMain .services .servicesText button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,13 +200,13 @@ header nav .navDiv .headButton button {
   margin-top: 30px;
   border: none;
 }
-#xidmetMain .xidmet .xidmetİmg {
+#servicesMain .services .servicesİmg {
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-#xidmetMain .xidmet .xidmetİmg img {
+#servicesMain .services .servicesİmg img {
   width: 60%;
 }
 
