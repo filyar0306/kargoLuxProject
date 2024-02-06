@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -87,6 +86,10 @@ header nav .navDiv .collapseDiv ul {
 header nav .navDiv .collapseDiv ul li {
   list-style: none;
 }
+header nav .navDiv .collapseDiv ul li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #7b5ce1;
+}
 header nav .navDiv .collapseDiv ul li a {
   font-weight: 500;
   font-size: 15px;
@@ -95,10 +98,7 @@ header nav .navDiv .collapseDiv ul li a {
   line-height: normal;
   text-transform: none;
   letter-spacing: 0px;
-}
-header nav .navDiv .collapseDiv ul li a:hover {
-  cursor: pointer;
-  border-bottom: 2px solid #7b5ce1;
+  text-decoration: none;
 }
 header nav .navDiv .headButton {
   width: 40%;
@@ -139,234 +139,6 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#caruselSec {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgb(211, 211, 211);
-}
-
-#xidmetMain {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgb(211, 211, 211);
-  min-height: 900px;
-}
-#xidmetMain .xidmet {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 20px;
-  min-height: 400px;
-  background-color: #f8f7fe;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-#xidmetMain .xidmet .xidmetText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-}
-#xidmetMain .xidmet .xidmetText h1 {
-  font-weight: 700;
-  font-size: 20px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-}
-#xidmetMain .xidmet .xidmetText p {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: 22px;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-}
-#xidmetMain .xidmet .xidmetText button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 52px;
-  background-color: #ff6d67;
-  color: #fff;
-  border-radius: 10px;
-  margin-top: 30px;
-  border: none;
-}
-#xidmetMain .xidmet .xidmetİmg {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-#xidmetMain .xidmet .xidmetİmg img {
-  width: 60%;
-}
-
-#product {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgb(211, 211, 211);
-}
-#product .productText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 500px;
-  gap: 20px;
-}
-#product .productText .purpleTxt {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border: 2px solid red;
-  border-radius: 50px;
-}
-#product .productText .purpleTxt span {
-  font-size: 25px;
-  font-family: Nunito-Bold;
-  margin-left: 10px;
-  color: black;
-  font-weight: 700;
-}
-#product .productText .purpleSection {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #9d87e7;
-  border-radius: 20px;
-  padding: 20px 20px;
-}
-#product .productText .purpleSection h2 {
-  font-family: Nunito-ExtraBold;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 19px;
-  color: #fff;
-}
-#product .productText .purpleSection .purpleText {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#product .productText .purpleSection .purpleText span {
-  font-family: Nunito-ExtraBold;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 19px;
-  color: #fff;
-}
-
-#smart {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgb(211, 211, 211);
-}
-#smart .smartCustoms {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 300px;
-}
-#smart .smartCustoms .smartTexts {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-#smart .smartCustoms .smartTexts h2 {
-  font-weight: 700;
-  size: 25px;
-  font-style: normal;
-  color: rgb(123, 92, 225);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-}
-#smart .smartCustoms .smartTexts h1 {
-  font-weight: 700;
-  size: 25px;
-  font-style: normal;
-  color: rgb(255, 109, 103);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-}
-#smart .smartCustoms .smartTexts p {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-Regular;
-  letter-spacing: 0;
-  width: 85%;
-}
-#smart .smartCustoms .smartText {
-  width: 100%;
-  display: flex;
-  align-items: end;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-#smart .smartCustoms .smartText h1 {
-  font-weight: 700;
-  size: 25px;
-  font-style: normal;
-  color: rgb(255, 109, 103);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-}
-#smart .smartCustoms .smartText p {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-Regular;
-  letter-spacing: 0;
-}
-#smart .smartCustoms .smartCustomText img {
-  width: 100%;
-}
-
 #new {
   width: 100%;
   display: flex;
@@ -479,45 +251,128 @@ header nav .navDiv .headButton button {
   letter-spacing: 0;
 }
 
-#markaSlider {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 180px;
-  border-bottom: 1px solid rgb(211, 211, 211);
+#register {
+  padding: 2rem 0 8rem;
 }
-#markaSlider .markaSliderSec {
-  width: 100%;
+#register .left .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+#register .left .customer-cat {
+  margin: 3rem 0 2rem;
   display: flex;
-  align-items: center;
+  gap: 2rem;
   justify-content: center;
 }
-
-#youtubeSec {
-  width: 100%;
+#register .left .customer-cat .person {
   display: flex;
+  font-size: 14px;
+  color: #94949f;
   align-items: center;
-  justify-content: center;
-  min-height: 500px;
-  border-bottom: 1px solid rgb(211, 211, 211);
-}
-#youtubeSec .youtubeLink {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-#youtubeSec .youtubeLink img {
-  width: 100%;
   border-radius: 20px;
-  cursor: pointer;
-  transition: transform 0.3s;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
-#youtubeSec .youtubeLink img:hover {
-  transform: scale(1.1);
+#register .left .customer-cat .person span {
+  padding: 0;
+  margin-left: 0.3rem;
+  color: #94949f;
+  transition: 0.1s;
+}
+#register .left .customer-cat .person:hover {
+  cursor: pointer;
+  color: #f5a416;
+}
+#register .left .customer-cat .person:hover span {
+  color: #f5a416;
+}
+#register .left .customer-cat .selected {
+  cursor: pointer;
+  color: #f5a416;
+  background-color: #fef5e9;
+  transition: 0.2s ease-in-out;
+}
+#register .left .customer-cat .selected span {
+  color: #f5a416;
+}
+#register .left .form .form-comp {
+  gap: 1.5rem;
+  display: flex;
+  margin: 1rem 0 0 0.5rem;
+  justify-content: center;
+}
+#register .left .form input {
+  padding: 0.5rem;
+  font-size: 15px;
+  border: 1px solid #cecee2;
+  border-radius: 5px;
+  outline: none;
+}
+#register .left .form input:focus::placeholder {
+  color: transparent;
+}
+#register .left .form select {
+  height: 100%;
+  padding: 0.2rem;
+  cursor: pointer;
+  font-size: 14px;
+  color: #747474;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #cecee2;
+}
+#register .left .form .nationality {
+  width: 100%;
+}
+#register .left .form .id-type {
+  border-radius: 5px 0 0 5px;
+}
+#register .left .form .id-number {
+  width: 80%;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  background-color: white;
+  border: 1px solid #cecee2;
+  border-left: 0;
+}
+#register .left .form .city, #register .left .form .branch {
+  padding: 0.7rem 0.2rem;
+}
+#register .left .form .address {
+  width: 129.4%;
+}
+#register .left .form .btn-wrap {
+  margin-top: 2rem;
+}
+#register .left .form .btn-wrap .register {
+  background-color: #fd475d;
+  padding: 0.5rem 3.5rem;
+  border-radius: 10px;
+  color: white;
+  transition: 0.2s;
+}
+#register .left .form .btn-wrap .register:hover {
+  transform: translate(0%, -1%);
+  box-shadow: 0px 2px 5px 1px #8D8D8D;
+}
+#register .left .form .btn-wrap .register:active {
+  transform: translate(0%, 2%);
+  box-shadow: none;
+}
+#register .right {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+#register .right img {
+  width: 100%;
+  margin-top: 7rem;
+}
+#register .right .text {
+  margin-top: 1rem;
 }
 
 #iconsMedia {

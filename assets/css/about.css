@@ -264,17 +264,18 @@ footer .footerList {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  padding: 0 20px;
+  padding: 20px 0px;
 }
 footer .footerList h1 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
 }
-footer .footerList p {
+footer .footerList a {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+  text-decoration: none;
 }
 footer .footerList .footerListBorder {
   width: 100%;

@@ -205,6 +205,36 @@ header nav .navDiv .headButton button {
   width: 100%;
 }
 
+#storesProducts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#storesProducts #storesProductsMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+#storesProducts #storesProductsMain .myDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 15%;
+}
+#storesProducts #storesProductsMain .myDiv img {
+  width: 100%;
+}
+#storesProducts #storesProductsMain .myDiv h1 {
+  font-size: 16px;
+  color: #ff7a5c;
+}
+
 #iconsMedia {
   width: 100%;
   display: flex;
@@ -274,17 +304,18 @@ footer .footerList {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  padding: 0 20px;
+  padding: 20px 0px;
 }
 footer .footerList h1 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
 }
-footer .footerList p {
+footer .footerList a {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+  text-decoration: none;
 }
 footer .footerList .footerListBorder {
   width: 100%;

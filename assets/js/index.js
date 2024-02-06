@@ -65,3 +65,25 @@ function resetCalculator() {
     });
   });
 
+
+
+  window.onload = function () {
+    OpenBootstrapPopup();
+};
+function OpenBootstrapPopup() {
+    $("#simpleModal").modal('show');
+}
+const closeH=()=>{
+const modal=document.querySelector('.modal')
+const modalbck=document.querySelector('.modal-backdrop')
+console.log('asd');
+modal.style.display="none"
+modalbck.style.display="none"
+
+}
+
+
+
+
+
+

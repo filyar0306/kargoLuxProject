@@ -281,18 +281,19 @@ letter-spacing: 0;
         justify-content: center;
         flex-direction: column;
         gap: 10px;
-        padding: 0 20px;
+        padding: 20px 0px ;
        
         h1{
             color: #fff;
 font-size: 20px;
 font-weight: 600;
         }
-        p{
-            color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-        }
+        a{
+          color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+      }
         .footerListBorder{
             width: 100%; 
             display: flex;

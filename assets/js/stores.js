@@ -1,59 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const turkeyLink = document.querySelector(".türkiye");
-  const usaLink = document.querySelector(".usa");
-  const storeWrapper = document.querySelector(".store-wrapper");
+let storesProductsMain = document.getElementById("storesProductsMain")
+let seeMore = document.getElementById("see-more")
+let limit =1
+let page=3
+const renderProducts = (page, limit) => {
+    axios.get(`http://localhost:3000/posts?_page=${page}&_limit=${limit}`) 
+        .then((response) => {
+            const posts = response.data;
+            posts.forEach((post) => {
+                const { id, image, name} = post;
+                let myDiv = document.createElement("div");
+                myDiv.className = "myDiv";
+                myDiv.innerHTML = `
+                    <a href="https://www.trendyol.com/?id=${id}">
+                        <img src="${image}" alt="${name}">
+                   <h4>${name}</h4>
+                    </a>
+                `;
+                storesProductsMain.append(myDiv);
+            });
+        })   
+}
 
-  turkeyLink.addEventListener("click", function () {
-      // Türkiye'ye ait markaları göster
-      showTurkishBrands();
-  });
+let currentPage = 1;
+const productsPerPage = 2;
 
-  usaLink.addEventListener("click", function () {
-      // ABD'ye ait markaları göster
-      showUSBrands();
-  });
+const handlePagination = (page) => {
+    currentPage = page;
+    renderProducts(currentPage, productsPerPage);
+}
 
-  // Sayfa yüklendiğinde tüm markaları göster
-  showAllBrands();
-
-  function showTurkishBrands() {
-      storeWrapper.innerHTML = ""; // Mağaza resimlerini temizle
-
-      addStoreImage("koton.png");
-      addStoreImage("gratis.png");
-      addStoreImage("Stradivarius_logo.png");
-      // Türkiye'ye ait diğer markaları eklemek için aynı şekilde devam edebilirsiniz
-  }
-
-  function showUSBrands() {
-      storeWrapper.innerHTML = ""; // Mağaza resimlerini temizle
-
-      addStoreImage("uspoloass.png");
-      addStoreImage("trenyol.png");
-      addStoreImage("aliexpress.png");
-      // ABD'ye ait diğer markaları eklemek için aynı şekilde devam edebilirsiniz
-  }
-
-  function showAllBrands() {
-      // Tüm markaları göster
-      showTurkishBrands();
-      showUSBrands();
-  }
-
-  // Yeni bir mağaza resmi eklemek için fonksiyon
-  function addStoreImage(imageFileName) {
-      const storeDiv = document.createElement("div");
-      storeDiv.classList.add("store", "d-flex", "col-xxl-2", "col-xl-2", "col-lg-3", "col-md-4", "col-sm-6");
-
-      const storeLink = document.createElement("a");
-      storeLink.href = "./stores.html";
-
-      const storeImg = document.createElement("img");
-      storeImg.src = "./assets/img/196.png" + imageFileName;
-      storeImg.alt = "";
-
-      storeLink.appendChild(storeImg);
-      storeDiv.appendChild(storeLink);
-      storeWrapper.appendChild(storeDiv);
-  }
-});
+window.onload = () => {
+    renderProducts(currentPage, productsPerPage); 
+}
