@@ -1,34 +1,71 @@
-let storesProductsMain = document.getElementById("storesProductsMain")
-let seeMore = document.getElementById("see-more")
-let limit =1
-let page=3
-const renderProducts = (page, limit) => {
-    axios.get(`http://localhost:3000/posts?_page=${page}&_limit=${limit}`) 
-        .then((response) => {
-            const posts = response.data;
-            posts.forEach((post) => {
-                const { id, image, name} = post;
-                let myDiv = document.createElement("div");
-                myDiv.className = "myDiv";
+let products = document.getElementById("products")
+let loadMore = document.getElementById("loadMore")
+let page =1
+let limit=4
+
+const renderProducts = async () =>{
+try{
+    const response = await axios.get(`https://655c8cc025b76d9884fd82fe.mockapi.io/products?page=${page}&limit=${limit}`)
+    const data = response.data;
+    db = data;
+    console.log(data);
+    db.map((item) =>{
+        let myDiv = document.createElement("div")
+        myDiv.className = "myDiv"
+        myDiv.innerHTML = `
+        <img src="${item.image}" alt="">
+        <h1>${item.name}</h1>
+        <p>${item.price}</p>
+        <button onclick="addToCart(${item.id})"> Add to Cart</button>
+     
+        `;
+        products.appendChild(myDiv)
+    });
+    page++;
+}catch (error) {
+    console.log(error);
+}
+}
+
+loadMore.addEventListener("click", renderProducts)
+
+window.onload = () =>{
+    renderProducts()
+}
+
+
+
+let searchInp = document.getElementById("searchInp")
+let btnSearch = document.getElementById("btnSearch")
+
+
+function findByName() {
+    products.innerHTML = ``
+    axios
+        .get(
+            `https://655c8cc025b76d9884fd82fe.mockapi.io/products`
+        )
+        .then((res) => {
+            db = res.data;
+            console.log(db);
+    let filteredData = db.filter(item => item.name.toLowerCase().startsWith(searchInp.value.toLowerCase()))
+            let sortData = [...filteredData].sort((a, b) => a.name.localeCompare(b.name));
+            sortData.map((item) => {
+              console.log(sortData);
+                let myDiv = document.createElement("div")
+                myDiv.className = "myDiv"
                 myDiv.innerHTML = `
-                    <a href="https://www.trendyol.com/?id=${id}">
-                        <img src="${image}" alt="${name}">
-                   <h4>${name}</h4>
-                    </a>
-                `;
-                storesProductsMain.append(myDiv);
+            <img src="${item.image}" alt="">
+            <h2>${item.name}</h2>
+            <button onclick ="addToCart(${item.id})">Add to Cart</button>
+            `
+                products.append(myDiv)
             });
-        })   
+        });
+
 }
 
-let currentPage = 1;
-const productsPerPage = 2;
+btnSearch.addEventListener('click', findByName)
 
-const handlePagination = (page) => {
-    currentPage = page;
-    renderProducts(currentPage, productsPerPage);
-}
 
-window.onload = () => {
-    renderProducts(currentPage, productsPerPage); 
-}
+

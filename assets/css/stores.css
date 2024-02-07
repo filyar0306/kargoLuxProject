@@ -205,13 +205,29 @@ header nav .navDiv .headButton button {
   width: 100%;
 }
 
-#storesProducts {
+#popular {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#storesProducts #storesProductsMain {
+#popular .populartext {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  flex-direction: column;
+}
+#popular .populartext h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  line-height: 1.3;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+#popular #products {
   width: 100%;
   display: flex;
   align-items: center;
@@ -220,19 +236,38 @@ header nav .navDiv .headButton button {
   gap: 20px;
   padding-bottom: 20px;
 }
-#storesProducts #storesProductsMain .myDiv {
+#popular #products .myDiv {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 15%;
+  flex-direction: column;
+  width: 250px;
 }
-#storesProducts #storesProductsMain .myDiv img {
+#popular #products .myDiv img {
   width: 100%;
+  border-radius: 10px;
 }
-#storesProducts #storesProductsMain .myDiv h1 {
-  font-size: 16px;
+#popular #products .myDiv h1 {
+  font-size: 23px;
   color: #ff7a5c;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+#popular #products .myDiv p {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+}
+#popular #products .myDiv button {
+  background-color: #d1002c;
+  font-size: 16px;
+  font-weight: 500;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+#popular #products .myDiv button:hover {
+  background-color: transparent;
 }
 
 #iconsMedia {
