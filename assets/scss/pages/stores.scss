@@ -268,9 +268,12 @@
       justify-content: center;
       flex-direction: column;
       width: 250px;
+   
       img {
         width: 100%;
         border-radius: 10px;
+        position: relative;
+      
       }
       h1 {
         font-size: 23px;

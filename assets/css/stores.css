@@ -246,6 +246,7 @@ header nav .navDiv .headButton button {
 #popular #products .myDiv img {
   width: 100%;
   border-radius: 10px;
+  position: relative;
 }
 #popular #products .myDiv h1 {
   font-size: 23px;

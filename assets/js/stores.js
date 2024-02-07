@@ -14,10 +14,10 @@ try{
         myDiv.className = "myDiv"
         myDiv.innerHTML = `
         <img src="${item.image}" alt="">
-        <h1>${item.name}</h1>
-        <p>${item.price}</p>
-        <button onclick="addToCart(${item.id})"> Add to Cart</button>
-     
+     <div class="myDivHover">
+  <a href=""><i class="fa-regular fa-heart"></i></a>
+</div>
+  
         `;
         products.appendChild(myDiv)
     });
@@ -35,37 +35,37 @@ window.onload = () =>{
 
 
 
-let searchInp = document.getElementById("searchInp")
-let btnSearch = document.getElementById("btnSearch")
+// let searchInp = document.getElementById("searchInp")
+// let btnSearch = document.getElementById("btnSearch")
 
 
-function findByName() {
-    products.innerHTML = ``
-    axios
-        .get(
-            `https://655c8cc025b76d9884fd82fe.mockapi.io/products`
-        )
-        .then((res) => {
-            db = res.data;
-            console.log(db);
-    let filteredData = db.filter(item => item.name.toLowerCase().startsWith(searchInp.value.toLowerCase()))
-            let sortData = [...filteredData].sort((a, b) => a.name.localeCompare(b.name));
-            sortData.map((item) => {
-              console.log(sortData);
-                let myDiv = document.createElement("div")
-                myDiv.className = "myDiv"
-                myDiv.innerHTML = `
-            <img src="${item.image}" alt="">
-            <h2>${item.name}</h2>
-            <button onclick ="addToCart(${item.id})">Add to Cart</button>
-            `
-                products.append(myDiv)
-            });
-        });
+// function findByName() {
+//     products.innerHTML = ``
+//     axios
+//         .get(
+//             `https://655c8cc025b76d9884fd82fe.mockapi.io/products`
+//         )
+//         .then((res) => {
+//             db = res.data;
+//             console.log(db);
+//     let filteredData = db.filter(item => item.name.toLowerCase().startsWith(searchInp.value.toLowerCase()))
+//             let sortData = [...filteredData].sort((a, b) => a.name.localeCompare(b.name));
+//             sortData.map((item) => {
+//               console.log(sortData);
+//                 let myDiv = document.createElement("div")
+//                 myDiv.className = "myDiv"
+//                 myDiv.innerHTML = `
+//             <img src="${item.image}" alt="">
+//             <h2>${item.name}</h2>
+//             <button onclick ="addToCart(${item.id})">Add to Cart</button>
+//             `
+//                 products.append(myDiv)
+//             });
+//         });
 
-}
+// }
 
-btnSearch.addEventListener('click', findByName)
+// btnSearch.addEventListener('click', findByName)
 
 
 
