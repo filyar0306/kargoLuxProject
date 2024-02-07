@@ -44,7 +44,7 @@
             text-decoration: none;
             &:hover {
               cursor: pointer;
-              border-bottom-color: #7b5ce1;
+              color: #7b5ce1;
             }
           }
         }
@@ -102,7 +102,7 @@
                     text-decoration: none;
                   &:hover {
                   
-                    border-bottom: 2px solid #7b5ce1;
+                   color: #7b5ce1;
                   }
                 }
               }
@@ -158,6 +158,61 @@
   } 
   }
    
+#reklam{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    .reklamMain{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;   
+        flex-direction: column;
+        min-height: 500px;
+        gap: 10px;
+        img{
+            width: 100%;
+        }
+        h1{
+            font-weight: 900;
+            font-size: 50px;
+            font-style: normal;
+            color: rgb(123, 92, 225);
+            line-height: normal;
+            text-decoration: none;
+            transform: none;
+            font-family: Nunito-ExtraBold;
+            letter-spacing: 0;
+            span{
+                color: rgb(255, 109, 103);
+                font-weight: 900;
+                font-size: 50px;
+                font-style: normal;
+                line-height: normal;
+                text-decoration: none;
+                transform: none;
+                font-family: Nunito-ExtraBold;
+                letter-spacing: 0;
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            font-style: normal;
+            color: rgb(40, 33, 65);
+            line-height: normal;
+            text-decoration: none;
+            transform: none;
+            font-family: Nunito-Regular;
+            letter-spacing: 0;
+          width: 80%;
+        }
+    }
+}
+
+
   #servicesMain{
       width: 100%;
       display: flex;
@@ -175,6 +230,15 @@
           background-color: #f8f7fe;
           border-radius: 20px;
           margin-bottom: 20px;
+          transition: transform 0.3s ease;
+          transition: .4s;
+        
+          &:hover{
+            filter: drop-shadow(0px 0px 9px #2c2c2c47);
+          }
+          
+}
+          }
           .servicesText{
               width: 100%;
               display: flex;
@@ -225,10 +289,10 @@
               justify-content: flex-end;
               img{
                   width: 60%;
+                 
               }
           }
-      }
-  }
+      
    #smart{
       width: 100%;
       display: flex;
@@ -249,7 +313,7 @@
               flex-direction: column;
               h2{
                   font-weight: 700;
-                  size: 25px;
+                  font-size: 25px;
                   font-style: normal;
                   color: rgb(123, 92, 225);
                   line-height: normal;
@@ -260,7 +324,7 @@
               }
               h1{
                   font-weight: 700;
-                  size: 25px;
+                  font-size: 25px;
                   font-style: normal;
                   color: rgb(255, 109, 103);
                   line-height: normal;
@@ -591,15 +655,17 @@ button {
           border-radius: 10px;
           gap: 10px;
           padding: 20px;
-        
+          transition: background-color 0.3s ease;
+          cursor: pointer;
+            &:hover{
+             
+                background-color: #fff;
+            }
           img{
             width: 100%;
             border-radius: 20px;
             cursor: pointer;
-      transition: transform 0.3s;
-            &:hover{
-                transform: scale(1.1);
-            }
+    
         }
           a{
               text-decoration: none;

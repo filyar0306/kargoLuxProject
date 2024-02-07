@@ -1,71 +1,34 @@
-let products = document.getElementById("products")
-let loadMore = document.getElementById("loadMore")
-let page =1
-let limit=4
 
-const renderProducts = async () =>{
-try{
-    const response = await axios.get(`https://655c8cc025b76d9884fd82fe.mockapi.io/products?page=${page}&limit=${limit}`)
-    const data = response.data;
-    db = data;
-    console.log(data);
-    db.map((item) =>{
-        let myDiv = document.createElement("div")
-        myDiv.className = "myDiv"
-        myDiv.innerHTML = `
-        <img src="${item.image}" alt="">
-     <div class="myDivHover">
-  <a href=""><i class="fa-regular fa-heart"></i></a>
-</div>
-  
-        `;
-        products.appendChild(myDiv)
-    });
-    page++;
-}catch (error) {
-    console.log(error);
-}
-}
+let bestSeller = document.getElementById("best_seller");
+let seeMore = document.getElementById("see-more");
 
-loadMore.addEventListener("click", renderProducts)
+const renderData = async () => {
 
-window.onload = () =>{
-    renderProducts()
-}
+  const res = await fetch(
+    `http://localhost:3000/posts`
+  );
+  const data = await res.json();
+  console.log(data);
+  data.forEach((item) => {
+    let myDiv = document.createElement("div");
+    myDiv.className = "myDiv";
+    myDiv.innerHTML = `
+    <a href="${item.link}" target="_blank">
+    <img src="${item.image}" alt="${item.name}">
+    <div class="markaName">  
+    <p>${item.marka}</p>
+    <h4>${item.name}</h4>
+    </div>
+    <p>${item.price} TL</p>
+    </a>
+    `;
+    bestSeller.append(myDiv);
+  });
 
+};
 
-
-// let searchInp = document.getElementById("searchInp")
-// let btnSearch = document.getElementById("btnSearch")
-
-
-// function findByName() {
-//     products.innerHTML = ``
-//     axios
-//         .get(
-//             `https://655c8cc025b76d9884fd82fe.mockapi.io/products`
-//         )
-//         .then((res) => {
-//             db = res.data;
-//             console.log(db);
-//     let filteredData = db.filter(item => item.name.toLowerCase().startsWith(searchInp.value.toLowerCase()))
-//             let sortData = [...filteredData].sort((a, b) => a.name.localeCompare(b.name));
-//             sortData.map((item) => {
-//               console.log(sortData);
-//                 let myDiv = document.createElement("div")
-//                 myDiv.className = "myDiv"
-//                 myDiv.innerHTML = `
-//             <img src="${item.image}" alt="">
-//             <h2>${item.name}</h2>
-//             <button onclick ="addToCart(${item.id})">Add to Cart</button>
-//             `
-//                 products.append(myDiv)
-//             });
-//         });
-
-// }
-
-// btnSearch.addEventListener('click', findByName)
-
+window.onload = () => {
+  renderData();
+};
 
 

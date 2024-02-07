@@ -48,7 +48,7 @@ nav .kargoNav .nav-underline li a {
 }
 nav .kargoNav .nav-underline li a:hover {
   cursor: pointer;
-  border-bottom-color: #7b5ce1;
+  color: #7b5ce1;
 }
 
 header {
@@ -98,7 +98,7 @@ header nav .navDiv .collapseDiv ul li a {
   text-decoration: none;
 }
 header nav .navDiv .collapseDiv ul li a:hover {
-  border-bottom: 2px solid #7b5ce1;
+  color: #7b5ce1;
 }
 header nav .navDiv .headButton {
   width: 40%;
@@ -140,6 +140,60 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
+#reklam {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+#reklam .reklamMain {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 500px;
+  gap: 10px;
+}
+#reklam .reklamMain img {
+  width: 100%;
+}
+#reklam .reklamMain h1 {
+  font-weight: 900;
+  font-size: 50px;
+  font-style: normal;
+  color: rgb(123, 92, 225);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+}
+#reklam .reklamMain h1 span {
+  color: rgb(255, 109, 103);
+  font-weight: 900;
+  font-size: 50px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+}
+#reklam .reklamMain p {
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-Regular;
+  letter-spacing: 0;
+  width: 80%;
+}
+
 #servicesMain {
   width: 100%;
   display: flex;
@@ -158,15 +212,21 @@ header nav .navDiv .headButton button {
   background-color: #f8f7fe;
   border-radius: 20px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  transition: 0.4s;
 }
-#servicesMain .services .servicesText {
+#servicesMain .services:hover {
+  filter: drop-shadow(0px 0px 9px rgba(44, 44, 44, 0.2784313725));
+}
+
+.servicesText {
   width: 100%;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-#servicesMain .services .servicesText h1 {
+.servicesText h1 {
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
@@ -177,7 +237,7 @@ header nav .navDiv .headButton button {
   font-family: Nunito-ExtraBold;
   letter-spacing: 0;
 }
-#servicesMain .services .servicesText p {
+.servicesText p {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -188,7 +248,7 @@ header nav .navDiv .headButton button {
   font-family: Nunito-ExtraBold;
   letter-spacing: 0;
 }
-#servicesMain .services .servicesText button {
+.servicesText button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,13 +260,14 @@ header nav .navDiv .headButton button {
   margin-top: 30px;
   border: none;
 }
-#servicesMain .services .servicesİmg {
+
+.servicesİmg {
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-#servicesMain .services .servicesİmg img {
+.servicesİmg img {
   width: 60%;
 }
 
@@ -233,7 +294,7 @@ header nav .navDiv .headButton button {
 }
 #smart .smartCustoms .smartTexts h2 {
   font-weight: 700;
-  size: 25px;
+  font-size: 25px;
   font-style: normal;
   color: rgb(123, 92, 225);
   line-height: normal;
@@ -244,7 +305,7 @@ header nav .navDiv .headButton button {
 }
 #smart .smartCustoms .smartTexts h1 {
   font-weight: 700;
-  size: 25px;
+  font-size: 25px;
   font-style: normal;
   color: rgb(255, 109, 103);
   line-height: normal;
@@ -542,15 +603,16 @@ header nav .navDiv .headButton button {
   border-radius: 10px;
   gap: 10px;
   padding: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+#new .newSection:hover {
+  background-color: #fff;
 }
 #new .newSection img {
   width: 100%;
   border-radius: 20px;
   cursor: pointer;
-  transition: transform 0.3s;
-}
-#new .newSection img:hover {
-  transform: scale(1.1);
 }
 #new .newSection a {
   text-decoration: none;
