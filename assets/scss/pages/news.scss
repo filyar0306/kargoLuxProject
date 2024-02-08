@@ -98,7 +98,7 @@ background-image: url(/assets/img/background\ \(1\).png);
 
                   &:hover {
                     cursor: pointer;
-                    border-bottom: 2px solid #7b5ce1;
+                    color:  #7b5ce1;
              
                   }
                 a {
@@ -333,6 +333,7 @@ background-image: url(/assets/img/background\ \(1\).png);
           align-items: start;
           justify-content: flex-start;  
        gap: 20px;
+       flex-wrap: wrap;
        span{
           font-weight: 600;
               font-size: 15px;

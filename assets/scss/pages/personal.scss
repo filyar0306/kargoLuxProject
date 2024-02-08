@@ -98,7 +98,7 @@
   
                 &:hover {
                   cursor: pointer;
-                  border-bottom: 2px solid #7b5ce1;
+                 color:  #7b5ce1;
                 }
               }
             }
@@ -153,62 +153,55 @@
      }
   } 
   }
-#about{
-    width: 100%;
+  #logistic{
+    width: 100%; 
     display: flex;
     align-items: center;
-    justify-content: center;  
-     .aboutMain{
-        width: 100%;
-        display: flex;
-        align-items: start;
-        justify-content: center; 
-        flex-direction: column; 
-        min-height: 350px;
-        gap: 20px;
-        h1{
-            font-weight: 700;
-            font-size: 30px;
-font-style: normal;
-color: rgb(123, 92, 225);
-line-height: normal;
-text-decoration: none;
-transform: none;;
-font-family: Nunito-Bold;
-letter-spacing: 0
-        }
-        .aboutText{
-            width: 100%;
-            display: flex;
-            align-items: start;
-            justify-content: center;    
-            flex-direction: column;
-            h2{
-                font-weight: 700;
-                font-size: 16px;
-                font-style: normal;
-                color: rgb(40, 33, 65);
-                line-height: normal;
-                text-decoration: none;
-                transform: none;
-                font-family: Verdana;
-                letter-spacing: 0;
-            }
-            p{
-                font-weight: 400;
-                font-size: 16px;
-                font-style: normal;
-                color: rgb(40, 33, 65);
-                line-height: normal;
-                text-decoration: none;
-                transform: none;
-                font-family: Nunito-SemiBold;
-                letter-spacing: 0;
-            }
-        }
-     }
-}
-
+    justify-content: center;
+    min-height: 400px;
+    .logisticMain{
+      width: 100%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  margin-top: 20px;
+      h1{
+          font-weight: 700;
+              font-size: 30px;
+  font-style: normal;
+  color: rgb(123, 92, 225);
+  line-height: normal;
+  text-decoration: none;
+  transform: none;;
+  font-family: Nunito-Bold;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+      }
+    }
+    .contentText {
+  h2{
+    font-size: 20px;
+  }
+  .contentTextList{
+    h3{
+      font-size: 18px;
+    }
+  p{
+    font-size: 14px;
+  }
+  }
+  .contentTextListTwo{
+    h3{
+      font-size: 18px;
+    }
+  }
+  
+  }
+  }
+  
+  
+  
 #iconsMedia{
     width: 100%; 
     display: flex;
@@ -222,6 +215,7 @@ letter-spacing: 0
         align-items: start;
         justify-content: flex-start;  
      gap: 20px;
+     flex-wrap: wrap;
      span{
         font-weight: 600;
             font-size: 15px;
@@ -382,54 +376,6 @@ font-weight: 600;
     }
 }
 
-
-
-#logistic{
-  width: 100%; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
-  .logisticMain{
-    width: 100%; 
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-margin-top: 20px;
-    h1{
-        font-weight: 700;
-            font-size: 30px;
-font-style: normal;
-color: rgb(123, 92, 225);
-line-height: normal;
-text-decoration: none;
-transform: none;;
-font-family: Nunito-Bold;
-letter-spacing: 0;
-margin-bottom: 20px;
-    }
-  }
-  .contentText {
-  height: 400px; /* Uzun içeriği temsil etmek için bir değer */
-  overflow-y: scroll;
-  padding-top: 20px;
-
-
-
-  /* Cursor stili */
-.contentText::-webkit-scrollbar {
-  width: 10px;
-  .contentText::-webkit-scrollbar-thumb {
-  background-color: #888;
-
-.contentText::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-}
-}
-}
-}
 
 
 

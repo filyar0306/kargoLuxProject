@@ -722,6 +722,7 @@ header nav .navDiv .headButton button {
   align-items: start;
   justify-content: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #iconsMedia .iconsMediaText span {
   font-weight: 600;

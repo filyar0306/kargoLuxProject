@@ -98,7 +98,7 @@ header nav .navDiv .collapseDiv ul li a {
 }
 header nav .navDiv .collapseDiv ul li a:hover {
   cursor: pointer;
-  border-bottom: 2px solid #7b5ce1;
+  color: #7b5ce1;
 }
 header nav .navDiv .headButton {
   width: 40%;
@@ -139,62 +139,78 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#about {
-  width: 100%;
+#prohibited-items .prohibited-items-title {
+  min-height: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  text-align: center;
 }
-#about .aboutMain {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 350px;
-  gap: 20px;
-}
-#about .aboutMain h1 {
-  font-weight: 700;
+#prohibited-items .prohibited-items-title b {
   font-size: 30px;
-  font-style: normal;
-  color: rgb(123, 92, 225);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-Bold;
-  letter-spacing: 0;
+  color: #7b5ce1;
 }
-#about .aboutMain .aboutText {
+#prohibited-items .prohibited-items-description {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#prohibited-items .prohibited-items-description p {
+  font-size: 14px;
+  color: #7b7b93;
+}
+#prohibited-items .prohibited-items-country {
+  border-bottom: 1px solid #f8f8f8;
+  margin-bottom: 5rem;
+}
+#prohibited-items .prohibited-items-country .country-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 2rem;
+  background-color: #fef5e9;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+#prohibited-items .prohibited-items-list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  column-rule: black;
+  margin-bottom: 1rem;
+}
+#prohibited-items .prohibitedMain {
   width: 100%;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-#about .aboutMain .aboutText h2 {
-  font-weight: 700;
+#prohibited-items .prohibitedMain b {
   font-size: 16px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Verdana;
-  letter-spacing: 0;
+  padding-top: 1rem;
 }
-#about .aboutMain .aboutText p {
-  font-weight: 400;
+#prohibited-items .prohibitedMain li i {
+  color: red;
   font-size: 16px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-SemiBold;
-  letter-spacing: 0;
 }
 
+@media screen and (max-width: 414px) {
+  #prohibited-items .container .row .prohibited-items-title b {
+    font-size: 18px;
+  }
+  #prohibited-items .container .row .prohibited-items-description p {
+    font-size: 10px;
+  }
+  #prohibited-items .container .row .prohibited-items-list ul li {
+    font-size: 12px;
+  }
+  #prohibited-items .container .row .note b {
+    font-size: 10px;
+  }
+}
 #iconsMedia {
   width: 100%;
   display: flex;
@@ -209,6 +225,7 @@ header nav .navDiv .headButton button {
   align-items: start;
   justify-content: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #iconsMedia .iconsMediaText span {
   font-weight: 600;

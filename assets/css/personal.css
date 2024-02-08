@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -98,7 +97,7 @@ header nav .navDiv .collapseDiv ul li a {
 }
 header nav .navDiv .collapseDiv ul li a:hover {
   cursor: pointer;
-  border-bottom: 2px solid #7b5ce1;
+  color: #7b5ce1;
 }
 header nav .navDiv .headButton {
   width: 40%;
@@ -139,22 +138,22 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#about {
+#logistic {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 400px;
 }
-#about .aboutMain {
+#logistic .logisticMain {
   width: 100%;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 350px;
-  gap: 20px;
+  margin-top: 20px;
 }
-#about .aboutMain h1 {
+#logistic .logisticMain h1 {
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
@@ -164,35 +163,19 @@ header nav .navDiv .headButton button {
   transform: none;
   font-family: Nunito-Bold;
   letter-spacing: 0;
+  margin-bottom: 20px;
 }
-#about .aboutMain .aboutText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
+#logistic .contentText h2 {
+  font-size: 20px;
 }
-#about .aboutMain .aboutText h2 {
-  font-weight: 700;
-  font-size: 16px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Verdana;
-  letter-spacing: 0;
+#logistic .contentText .contentTextList h3 {
+  font-size: 18px;
 }
-#about .aboutMain .aboutText p {
-  font-weight: 400;
-  font-size: 16px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-SemiBold;
-  letter-spacing: 0;
+#logistic .contentText .contentTextList p {
+  font-size: 14px;
+}
+#logistic .contentText .contentTextListTwo h3 {
+  font-size: 18px;
 }
 
 #iconsMedia {
@@ -209,6 +192,7 @@ header nav .navDiv .headButton button {
   align-items: start;
   justify-content: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #iconsMedia .iconsMediaText span {
   font-weight: 600;
@@ -357,47 +341,4 @@ footer .end span {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-}
-
-#logistic {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
-}
-#logistic .logisticMain {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 20px;
-}
-#logistic .logisticMain h1 {
-  font-weight: 700;
-  font-size: 30px;
-  font-style: normal;
-  color: rgb(123, 92, 225);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-Bold;
-  letter-spacing: 0;
-  margin-bottom: 20px;
-}
-#logistic .contentText {
-  height: 400px; /* Uzun içeriği temsil etmek için bir değer */
-  overflow-y: scroll;
-  padding-top: 20px;
-  /* Cursor stili */
-}
-#logistic .contentText .contentText::-webkit-scrollbar {
-  width: 10px;
-}
-#logistic .contentText .contentText::-webkit-scrollbar .contentText::-webkit-scrollbar-thumb {
-  background-color: #888;
-}
-#logistic .contentText .contentText::-webkit-scrollbar .contentText::-webkit-scrollbar-thumb .contentText::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
 }

@@ -781,6 +781,7 @@ button {
           align-items: start;
           justify-content: flex-start;  
        gap: 20px;
+       flex-wrap: wrap;
        span{
           font-weight: 600;
               font-size: 15px;

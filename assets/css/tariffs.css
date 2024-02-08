@@ -98,7 +98,7 @@ header nav .navDiv .collapseDiv ul li a {
 }
 header nav .navDiv .collapseDiv ul li a:hover {
   cursor: pointer;
-  border-bottom: 2px solid #7b5ce1;
+  color: #7b5ce1;
 }
 header nav .navDiv .headButton {
   width: 40%;
@@ -244,6 +244,7 @@ header nav .navDiv .headButton button {
   display: flex;
   align-items: start;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 20px;
 }
 #iconsMedia .iconsMediaText span {

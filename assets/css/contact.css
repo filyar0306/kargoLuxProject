@@ -86,10 +86,6 @@ header nav .navDiv .collapseDiv ul {
 header nav .navDiv .collapseDiv ul li {
   list-style: none;
 }
-header nav .navDiv .collapseDiv ul li:hover {
-  cursor: pointer;
-  border-bottom: 2px solid #7b5ce1;
-}
 header nav .navDiv .collapseDiv ul li a {
   font-weight: 500;
   font-size: 15px;
@@ -99,6 +95,10 @@ header nav .navDiv .collapseDiv ul li a {
   text-transform: none;
   letter-spacing: 0px;
   text-decoration: none;
+}
+header nav .navDiv .collapseDiv ul li a:hover {
+  cursor: pointer;
+  color: #7b5ce1;
 }
 header nav .navDiv .headButton {
   width: 40%;
@@ -195,6 +195,7 @@ header nav .navDiv .headButton button {
   align-items: start;
   justify-content: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #iconsMedia .iconsMediaText span {
   font-weight: 600;

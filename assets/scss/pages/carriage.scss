@@ -98,7 +98,7 @@
   
                 &:hover {
                   cursor: pointer;
-                  border-bottom: 2px solid #7b5ce1;
+                color:  #7b5ce1;
                 }
               }
             }
@@ -153,62 +153,108 @@
      }
   } 
   }
-#about{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-     .aboutMain{
-        width: 100%;
-        display: flex;
-        align-items: start;
-        justify-content: center; 
-        flex-direction: column; 
-        min-height: 350px;
-        gap: 20px;
-        h1{
-            font-weight: 700;
-            font-size: 30px;
-font-style: normal;
-color: rgb(123, 92, 225);
-line-height: normal;
-text-decoration: none;
-transform: none;;
-font-family: Nunito-Bold;
-letter-spacing: 0
-        }
-        .aboutText{
-            width: 100%;
-            display: flex;
-            align-items: start;
-            justify-content: center;    
-            flex-direction: column;
-            h2{
-                font-weight: 700;
-                font-size: 16px;
-                font-style: normal;
-                color: rgb(40, 33, 65);
-                line-height: normal;
-                text-decoration: none;
-                transform: none;
-                font-family: Verdana;
-                letter-spacing: 0;
-            }
-            p{
-                font-weight: 400;
-                font-size: 16px;
-                font-style: normal;
-                color: rgb(40, 33, 65);
-                line-height: normal;
-                text-decoration: none;
-                transform: none;
-                font-family: Nunito-SemiBold;
-                letter-spacing: 0;
-            }
-        }
-     }
+
+
+#prohibited-items{
+  .prohibited-items-title{
+      // background-color: red;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      b{
+          font-size: 30px;
+          color: #7b5ce1;
+      }
+  }
+  .prohibited-items-description{
+      margin-bottom: 2rem;
+      // background-color: pink;
+      text-align: center;
+      p{
+          font-size: 14px;
+          color: #7b7b93;
+      }
+  }
+  .prohibited-items-country{
+      border-bottom: 1px solid #f8f8f8;
+      margin-bottom: 5rem;
+      .country-badge{
+          display: flex;
+          align-items: center;
+          gap: .5rem;
+          padding: .5rem 2rem;
+          background-color: #fef5e9;
+          border-radius: 10px;
+          font-size: 15px;
+          margin-bottom: 2rem;
+          cursor: pointer;
+      }
+  }
+  .prohibited-items-list{
+      li{
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          // justify-content: center;
+          font-size: 14px;
+          column-rule: black;
+          margin-bottom: 1rem;
+      }
+
+  }
+  .prohibitedMain{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  b{
+    font-size: 16px;
+    padding-top: 1rem;
+   
+}
+li{
+
+  i{
+      color: red;
+      font-size: 16px;
+    }
 }
 
+  }
+}
+@media screen and (max-width:414px) {
+  #prohibited-items{
+      .container{
+          .row{
+              .prohibited-items-title{
+                  b{
+                      font-size: 18px;
+                  }
+              }
+              .prohibited-items-description{
+                  p{
+                      font-size: 10px;
+                  }
+              }
+              .prohibited-items-list{
+                  ul{
+                      li{
+                          font-size: 12px;
+                      }
+                  }
+              }
+              .note{
+                  b{
+                      font-size: 10px;
+                  }
+              }
+          }
+      }
+  }
+}
 #iconsMedia{
     width: 100%; 
     display: flex;
@@ -222,6 +268,7 @@ letter-spacing: 0
         align-items: start;
         justify-content: flex-start;  
      gap: 20px;
+     flex-wrap: wrap;
      span{
         font-weight: 600;
             font-size: 15px;
