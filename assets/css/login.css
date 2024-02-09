@@ -97,7 +97,8 @@ header nav .navDiv .collapseDiv ul li a {
   text-decoration: none;
 }
 header nav .navDiv .collapseDiv ul li a:hover {
-  border-bottom: 2px solid #7b5ce1;
+  cursor: pointer;
+  color: #7b5ce1;
 }
 header nav .navDiv .headButton {
   width: 40%;
@@ -105,8 +106,8 @@ header nav .navDiv .headButton {
   align-items: center;
   justify-content: center;
 }
-header nav .navDiv .headButton a {
-  font-weight: 500;
+header nav .navDiv .headButton span {
+  font-weight: 600;
   font-size: 15px;
   font-style: normal;
   color: rgb(0, 0, 0);
@@ -115,7 +116,7 @@ header nav .navDiv .headButton a {
   text-decoration: none;
   letter-spacing: 0px;
 }
-header nav .navDiv .headButton a:hover {
+header nav .navDiv .headButton span:hover {
   color: #7b5ce1;
   cursor: pointer;
 }
@@ -201,7 +202,7 @@ header nav .navDiv .headButton button {
 }
 #login .left .form .form-group .reset {
   margin-top: 1rem;
-  color: #15b2ec;
+  color: #7b5ce1;
 }
 #login .left .form .form-group .reset a {
   text-decoration: none;
@@ -227,7 +228,7 @@ header nav .navDiv .headButton button {
 }
 #login .right .text a {
   margin-left: 0.5rem;
-  color: #15b2ec;
+  color: #7b5ce1;
   font-weight: bold;
   font-size: 13px;
   text-decoration: none;

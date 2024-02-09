@@ -222,15 +222,17 @@ background-image: url(/assets/img/background\ \(1\).png);
           border-radius: 10px;
           gap: 10px;
           padding: 20px;
-        
+          transition: background-color 0.3s ease;
+          cursor: pointer;
+            &:hover{
+             
+                background-color: #fff;
+            }
           img{
             width: 100%;
             border-radius: 20px;
             cursor: pointer;
-      transition: transform 0.3s;
-            &:hover{
-                transform: scale(1.1);
-            }
+    
         }
           a{
               text-decoration: none;

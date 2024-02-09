@@ -86,4 +86,6 @@ modalbck.style.display="none"
 
 
 
-
+$('#myCarousel').carousel({
+  interval: 3000,
+})

@@ -139,21 +139,100 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#mapsMain {
+#contactMap {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-#mapsMain #maps {
+#contactMap .contactTxt {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  text-align: center;
+}
+#contactMap .contactTxt h1 {
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  color: #7b5ce1;
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+#contactMap .contactTxt p {
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  color: rgb(70, 70, 70);
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+  text-decoration: none;
+  width: 60%;
+}
+#contactMap .contactMapText {
   width: 100%;
-  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 400px;
+  background-color: #f8f7fe;
+  border-radius: 5px;
+  gap: 10px;
+  margin-top: 1rem;
+}
+#contactMap .contactMapTxt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  flex-wrap: wrap;
+}
+#contactMap .contactMapTxt p i {
+  font-size: 20px;
+}
+#contactMap i {
+  font-size: 40px;
+}
+#contactMap h3 {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+#contactMap p {
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+
+#mapsMain {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+#mapsMain iframe {
+  width: 100%;
 }
 
 #youtubeSec {

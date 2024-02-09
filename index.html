@@ -10,22 +10,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    
+
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
- 
-    <nav >
+    <nav>
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -35,7 +37,7 @@
                   <a class="nav-link" href="about.html">Haqqımızda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="question.html">Suallar</a>
+                  <a class="nav-link" href="questions.html">Suallar</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="carriage.html">Daşınma şərtləri</a>
@@ -45,10 +47,7 @@
                     >Şəxsi məlumatların qorunması</a
                   >
                 </li>
-                 
-
               </ul>
-           
             </div>
           </div>
         </div>
@@ -74,22 +73,35 @@
           <div class="collapse navbar-collapse collapseDiv" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="homepage.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="homepage.html"
                   >Ana Səhifə</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="tariffs.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="tariffs.html"
                   >Tariflər</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="stores.html">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="stores.html"
+                >
                   Mağazalar</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="services.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="services.html"
                   >Xidmətlər</a
                 >
               </li>
@@ -99,11 +111,13 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contact.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact.html"
                   >Əlaqə</a
                 >
               </li>
-              
             </ul>
           </div>
           <div class="headButton">
@@ -115,41 +129,83 @@
     </header>
 
 
-<section id="reklam">
+<section id="caruselMain">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
-        <div class="reklamMain">
-<h1>
-  Türkiyənin online mağazaları <span>evinizdə!</span></h1>
-<p>
-  Xarici saytlardan sifariş etmək hələ bu qədər asan olmamışdı.
-  “Kargolux” sizi arzularınıza çatdırır.                            </p>
+      <div class="col-12">
+          <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="mask flex-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-7 col-12 order-md-1 order-2">
+                  <h4>
+                    Türkiyənin online mağazaları <span>evinizdə!</span></h4>
+                  <p>Xarici saytlardan sifariş etmək hələ bu qədər asan olmamışdı.
+                    “Kargolux” sizi arzularınıza çatdırır.</p>
+                    <button>Ətraflı</button>
+                   </div>
+                <div class="col-md-5 col-12 order-md-2 order-1"><img src="./assets/img/1-03.png" class="mx-auto" alt="slide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="mask flex-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-7 col-12 order-md-1 order-2">
+                  <h4>Sürətli çatdırılmanın yeni adı</h4>
+                  <p>KargoLux ilə bütün bağlamalarınız 0.70 dollardan başlayan qiymətlərlə ünvanınıza kimi çatdırılır.                            </p>
+                <button>Ətraflı</button>
+                  </div>
+                <div class="col-md-5 col-12 order-md-2 order-1"><img src="./assets/img/1-05.png" class="mx-auto" alt="slide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="mask flex-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-7 col-12 order-md-1 order-2">
+                  <h4>
+                    Mobil tətbiq ilə sifarişiniz <span>daha rahat</span></h4>
+                  <p>Kargolux məbil tətbiqi ilə sifarişlərinizdən həzz alın. </p>
+                  <button>Ətraflı</button>
+                 </div>
+                <div class="col-md-5 col-12 order-md-2 order-1"><img src="./assets/img/tedbiq.png" class="mx-auto" alt="slide"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
-        <div class="reklamMain">
-          <img src="./assets/img/1-03.png" alt="">
-        </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+
       </div>
     </div>
   </div>
 </section>
+    
 
+  
 
-
-
-
-
-
-    <section id="servicesMain"> 
+    <section id="servicesMain">
       <div class="container">
         <div class="row">
           <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
             <div style="background-color: transparent" class="services">
               <div class="servicesText">
-                <h1 style=" font-weight: 700;
-                font-size: 30px; color: rgb(123, 92, 225);">Məlumat və xidmətlərimiz</h1>
+                <h1
+                  style="
+                    font-weight: 700;
+                    font-size: 30px;
+                    color: rgb(123, 92, 225);
+                  "
+                >
+                  Məlumat və xidmətlərimiz
+                </h1>
                 <p>
                   “KargoLux” sizə bağlamaların Türkiyədən Azərbaycana surətli
                   daşınması xidmətini təklif edir.
@@ -183,7 +239,9 @@
               <div class="servicesText">
                 <h1>Təcili sifariş xidməti</h1>
                 <p>
-                    Sifarişlərin növbədən kənar həyata keçirilməsi üçün “Təcili sifariş” xidmətini seçə bilərsiniz. Təcili sifariş 30 dəqiqə ərzində həyata keçirilir
+                  Sifarişlərin növbədən kənar həyata keçirilməsi üçün “Təcili
+                  sifariş” xidmətini seçə bilərsiniz. Təcili sifariş 30 dəqiqə
+                  ərzində həyata keçirilir
                 </p>
                 <button>Ətraflı</button>
               </div>
@@ -197,7 +255,9 @@
               <div class="servicesText">
                 <h1>Ölkədaxili kuryer xidməti</h1>
                 <p>
-                    İndi sifarişlərinizi əldə etmək daha asan oldu. Göstərdiyimiz kuryer xidmətindən istifadə edərək sifarişlərinizi ünvanınıza qədər çatdırırıq
+                  İndi sifarişlərinizi əldə etmək daha asan oldu. Göstərdiyimiz
+                  kuryer xidmətindən istifadə edərək sifarişlərinizi ünvanınıza
+                  qədər çatdırırıq
                 </p>
                 <button>Ətraflı</button>
               </div>
@@ -255,7 +315,8 @@
               <div class="smartTexts">
                 <h1>Sifariş</h1>
                 <p>
-                    Türkiyədəki istənilən online alış-veriş saytından sifarişlərinizi Türkiyə ünvanımıza göndərin.
+                  Türkiyədəki istənilən online alış-veriş saytından
+                  sifarişlərinizi Türkiyə ünvanımıza göndərin.
                 </p>
               </div>
             </div>
@@ -265,9 +326,8 @@
               <div class="smartText">
                 <h1>Çatdırılma</h1>
                 <p>
-                    Qeydiyyatdan keçib sifariş etdiyiniz məhsullar 3 iş günündə ünvanınıza kimi çatdırılır.
-
-
+                  Qeydiyyatdan keçib sifariş etdiyiniz məhsullar 3 iş günündə
+                  ünvanınıza kimi çatdırılır.
                 </p>
               </div>
               <div class="smartCustomText">
@@ -281,422 +341,476 @@
 
     <section id="delivery">
       <div class="container">
-          <div class="deli-title">
-     
-              <img src="./assets/img/turkiyebayraqicon.png" alt="" />
+        <div class="deli-title">
+          <img src="./assets/img/turkiyebayraqicon.png" alt="" />
 
-              <b>Bütün məhsullar üzrə tariflər</b>
-          </div>
-          <div class="location d-flex justify-content-center">
-              <a href="#delivery" class="türkiye active">Standart</a>
-              <a href="#delivery" class="usa">Maye</a>
-          </div>
-          <div class="row">
-              
-              <div class="rate-wrapper from-türkiye col-12">
-                  <div class="row to-branch justify-content-center">
-                      <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                          <div class="condition">
-                             
-                              <b>0 kq dan - 0.100 kq dək</b>
-                          </div>
-                          <div class="detail d-flex">
-                              <div class="normal col-12 d-flex ">
-                                  <span class="title">Adi məhsul</span>
-                                  <span class="price">2.04  </span>
-                              </div>
-                             
-                          </div>
-                      </div>
-                      <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                          <div class="condition">
-                           
-                              <b>0.101 kq dan - 0.250 kq dək</b>
-                          </div>
-                          <div class="detail d-flex">
-                              <div class="normal col-6 d-flex ">
-                                  <span class="title">Adi məhsul</span>
-                                  <span class="price">4.08 </span>
-                              </div>
-                              
-                          </div>
-                      </div>
-                      <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                          <div class="condition">
-                            
-                              <b>0.251 kq dan - 0.500 kq dək</b>
-                          </div>
-                          <div class="detail d-flex">
-                              <div class="normal col-6 d-flex ">
-                                  <span class="title">Adi məhsul</span>
-                                  <span class="price">5.78  </span>
-                              </div>
-                              
-                          </div>
-                      </div>
-                      <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                          <div class="condition">
-                            
-                              <b>0.501 kq dan - 1 kq dək</b>
-                          </div>
-                          <div class="detail d-flex">
-                              <div class="normal col-6 d-flex ">
-                                  <span class="title">Adi məhsul</span>
-                                  <span class="price">7.14  </span>
-                              </div>
-                             
-                          </div>
-                      </div>
-                   
-                     
-
+          <b>Bütün məhsullar üzrə tariflər</b>
+        </div>
+        <div class="location d-flex justify-content-center">
+          <a href="#delivery" class="türkiye active">Standart</a>
+          <a href="#delivery" class="usa">Maye</a>
+        </div>
+        <div class="row">
+          <div class="rate-wrapper from-türkiye col-12">
+            <div class="row to-branch justify-content-center">
+              <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0 kq dan - 0.100 kq dək</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="normal col-12 d-flex">
+                    <span class="title">Adi məhsul</span>
+                    <span class="price">2.04 </span>
                   </div>
-                 
+                </div>
               </div>
-              <div class="rate-wrapper from-usa col-12" style="display: none;">
-                  <div class="row to-branch justify-content-center">
-                      <div class="rate  col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                          <div class="condition">
-                             
-                              <b>0.001 kq-dan 0.250 kq-a qədər</b>
-                          </div>
-                          <div class="detail d-flex">
-                              
-                              <div class="liquid col-6 d-flex ">
-                                  <span class="title">Maye və kosmetik</span>
-                                  <span class="price">2.30 </span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                          <div class="condition">
-                             
-                              <b>0.251 kq-dan 0.500 kq-a qədər</b>
-                          </div>
-                          <div class="detail d-flex">
-                             
-                              <div class="liquid col-6 d-flex ">
-                                  <span class="title">Maye və kosmetik</span>
-                                  <span class="price">4.30 </span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                        <div class="condition">
-                           
-                            <b>0.251 kq-dan 0.500 kq-a qədər</b>
-                        </div>
-                        <div class="detail d-flex">
-                           
-                            <div class="liquid col-6 d-flex ">
-                                <span class="title">Maye və kosmetik</span>
-                                <span class="price">4.30 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                      <div class="condition">
-                         
-                          <b>0.251 kq-dan 0.500 kq-a qədər</b>
-                      </div>
-                      <div class="detail d-flex">
-                         
-                          <div class="liquid col-6 d-flex ">
-                              <span class="title">Maye və kosmetik</span>
-                              <span class="price">4.30 </span>
-                          </div>
-                      </div>
+              <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0.101 kq dan - 0.250 kq dək</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="normal col-6 d-flex">
+                    <span class="title">Adi məhsul</span>
+                    <span class="price">4.08 </span>
                   </div>
-                  <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
-                    <div class="condition">
-                       
-                        <b>0.251 kq-dan 0.500 kq-a qədər</b>
-                    </div>
-                    <div class="detail d-flex">
-                       
-                        <div class="liquid col-6 d-flex ">
-                            <span class="title">Maye və kosmetik</span>
-                            <span class="price">4.30 </span>
-                        </div>
-                    </div>
-                </div>   
-                  </div>
+                </div>
               </div>
+              <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0.251 kq dan - 0.500 kq dək</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="normal col-6 d-flex">
+                    <span class="title">Adi məhsul</span>
+                    <span class="price">5.78 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0.501 kq dan - 1 kq dək</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="normal col-6 d-flex">
+                    <span class="title">Adi məhsul</span>
+                    <span class="price">7.14 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="rate-wrapper from-usa col-12" style="display: none">
+            <div class="row to-branch justify-content-center">
+              <div class="rate col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0.001 kq-dan 0.250 kq-a qədər</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="liquid col-6 d-flex">
+                    <span class="title">Maye və kosmetik</span>
+                    <span class="price">2.30 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0.251 kq-dan 0.500 kq-a qədər</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="liquid col-6 d-flex">
+                    <span class="title">Maye və kosmetik</span>
+                    <span class="price">4.30 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0.251 kq-dan 0.500 kq-a qədər</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="liquid col-6 d-flex">
+                    <span class="title">Maye və kosmetik</span>
+                    <span class="price">4.30 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0.251 kq-dan 0.500 kq-a qədər</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="liquid col-6 d-flex">
+                    <span class="title">Maye və kosmetik</span>
+                    <span class="price">4.30 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="rate d-flex col-xxl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="condition">
+                  <b>0.251 kq-dan 0.500 kq-a qədər</b>
+                </div>
+                <div class="detail d-flex">
+                  <div class="liquid col-6 d-flex">
+                    <span class="title">Maye və kosmetik</span>
+                    <span class="price">4.30 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
 
     <section id="calculator">
       <div class="container">
         <div class="row">
-
           <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
             <div class="calculatorMain">
               <div class="calculator-container">
-            
                 <form id="calculator-form">
-                    <label for="package-type">Paket Tipi</label>
-                    <select id="package-type" name="package-type" required>
-                        <option value="standard">Standart</option>
-                        <option value="liquid">Maye</option>
-                    </select>
-            
-                    <label for="city">Şehir</label>
-                    <select id="city" name="city" required>
-                        <option value="turkey">Turkey</option>
-                        <option value="usa">USA</option>
-                    </select>
-            
-                    <label for="length">Uzunluk (cm)</label>
-                    <input type="number" id="length" name="length" required>
-            
-                    <label for="width">En (cm)</label>
-                    <input type="number" id="width" name="width" required>
-            
-                    <label for="volume">Hacim (cm³)</label>
-                    <input type="number" id="volume" name="volume" required>
-            
-                    <label for="weight">Ağırlık (kg)</label>
-                    <input type="number" id="weight" name="weight" required>
-            
-                    <button type="button" onclick="calculateShipping()">Calculate
-                    </button>
-                    <button type="button" onclick="resetCalculator()">Reset</button>
+                  <label for="package-type">Paket Tipi</label>
+                  <select id="package-type" name="package-type" required>
+                    <option value="standard">Standart</option>
+                    <option value="liquid">Maye</option>
+                  </select>
+
+                  <label for="city">Şehir</label>
+                  <select id="city" name="city" required>
+                    <option value="turkey">Turkey</option>
+                    <option value="usa">USA</option>
+                  </select>
+
+                  <label for="length">Uzunluk (cm)</label>
+                  <input type="number" id="length" name="length" required />
+
+                  <label for="width">En (cm)</label>
+                  <input type="number" id="width" name="width" required />
+
+                  <label for="volume">Hacim (cm³)</label>
+                  <input type="number" id="volume" name="volume" required />
+
+                  <label for="weight">Ağırlık (kg)</label>
+                  <input type="number" id="weight" name="weight" required />
+
+                  <button type="button" onclick="calculateShipping()">
+                    Calculate
+                  </button>
+                  <button type="button" onclick="resetCalculator()">
+                    Reset
+                  </button>
                 </form>
-            
+
                 <div id="result"></div>
-            </div>
-    
+              </div>
             </div>
           </div>
           <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
             <div class="calculatorMain">
-    <h1>Kalkulyator
-    </h1>
-    <p>
-      Bağlamanın hər hansı bir tərəfinin ölçüsü (Türkiyə) 60 sm (Amerika) 80 sm və daha çox olarsa, bağlamanın həm həcm, həm də fiziki çəkisi hesablanır. Hansı çəki yüksək olarsa, daşınma haqqı ona əsasən hesablanır.                           </p>
+              <h1>Kalkulyator</h1>
+              <p>
+                Bağlamanın hər hansı bir tərəfinin ölçüsü (Türkiyə) 60 sm
+                (Amerika) 80 sm və daha çox olarsa, bağlamanın həm həcm, həm də
+                fiziki çəkisi hesablanır. Hansı çəki yüksək olarsa, daşınma
+                haqqı ona əsasən hesablanır.
+              </p>
             </div>
           </div>
-      
         </div>
       </div>
     </section>
 
     <section id="new">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="newSec">
-<h1>Xəbərlər və yeniliklər</h1>
-<p>Yeniliklər və kampaniyalar barədə məlumatlar əldə etmək üçün bizi izləmədə qalın</p>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
-                    <div class="newSection">
-                        <img src="./assets/img/Bahar-ucun-qarderob-teskili.jpg" alt="">
-                        <a href=""><h1>Bahar üçün qarderobun təşkili: 5 metodu</h1></a>                       
-                         <p> Aparıcı onlayn alış-veriş platforması olan Trendyol istənilən geyimi gözəlləşdirmək üçün...</p>
-<div class="baharText">
-    <a href="">Ətraflı </a>
-   <span>19 saat əvvəl</span>
-</div>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
-                    <div class="newSection">
-                        <img src="./assets/img/Trendyolda-aksesuarlari-nece-secmek-olar.jpg" alt="">
-                        <a href=""><h1>Bahar üçün qarderobun təşkili: 5 metodu</h1></a>
-                        <p> Aparıcı onlayn alış-veriş platforması olan Trendyol istənilən geyimi gözəlləşdirmək üçün...</p>
-<div class="baharText">
-    <a href="">Ətraflı</a>
-   <span>19 saat əvvəl</span>
-</div>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
-                    <div class="newSection">
-                        <img src="./assets/img/baharda-qarderobun-teskili-5-metodu.jpg" alt="">
-                        <a href=""><h1>Bahar üçün qarderobun təşkili: 5 metodu</h1></a>                        <p> Aparıcı onlayn alış-veriş platforması olan Trendyol istənilən geyimi gözəlləşdirmək üçün...</p>
-<div class="baharText">
-    <a href="">Ətraflı</a>
-   <span>19 saat əvvəl</span>
-</div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="newSec">
+              <h1>Xəbərlər və yeniliklər</h1>
+              <p>
+                Yeniliklər və kampaniyalar barədə məlumatlar əldə etmək üçün
+                bizi izləmədə qalın
+              </p>
             </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
+            <div class="newSection">
+              <img src="./assets/img/Bahar-ucun-qarderob-teskili.jpg" alt="" />
+              <a href=""><h1>Bahar üçün qarderobun təşkili: 5 metodu</h1></a>
+              <p>
+                Aparıcı onlayn alış-veriş platforması olan Trendyol istənilən
+                geyimi gözəlləşdirmək üçün...
+              </p>
+              <div class="baharText">
+                <a href="">Ətraflı </a>
+                <span>19 saat əvvəl</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
+            <div class="newSection">
+              <img
+                src="./assets/img/Trendyolda-aksesuarlari-nece-secmek-olar.jpg"
+                alt=""
+              />
+              <a href=""><h1>Bahar üçün qarderobun təşkili: 5 metodu</h1></a>
+              <p>
+                Aparıcı onlayn alış-veriş platforması olan Trendyol istənilən
+                geyimi gözəlləşdirmək üçün...
+              </p>
+              <div class="baharText">
+                <a href="">Ətraflı</a>
+                <span>19 saat əvvəl</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
+            <div class="newSection">
+              <img
+                src="./assets/img/baharda-qarderobun-teskili-5-metodu.jpg"
+                alt=""
+              />
+              <a href=""><h1>Bahar üçün qarderobun təşkili: 5 metodu</h1></a>
+              <p>
+                Aparıcı onlayn alış-veriş platforması olan Trendyol istənilən
+                geyimi gözəlləşdirmək üçün...
+              </p>
+              <div class="baharText">
+                <a href="">Ətraflı</a>
+                <span>19 saat əvvəl</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="markaSlider">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="markaSliderSec">
-                        
-
-                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div  class="carousel-inner">
-                              <div  class="carousel-item active">
-                                <div class="row">
-                                  <div class="col">
-                                    <img src="./assets/img/192.png" class="d-block w-50" alt="Resim 1">
-                                  </div>
-                                  <div class="col">
-                                    <img src="./assets/img/194.png" class="d-block w-50" alt="Resim 2">
-                                  </div>
-                                  <div class="col">
-                                    <img src="./assets/img/195.png" class="d-block w-50" alt="Resim 3">
-                                  </div>
-                                  <div class="col">
-                                    <img src="./assets/img/198.png" class="d-block w-50" alt="Resim 4">
-                                  </div>
-                                  <div class="col">
-                                    <img src="./assets/img/199.png" class="d-block w-50" alt="Resim 5">
-                                  </div>
-                                  <div class="col">
-                                    <img src="./assets/img/200.png" class="d-block w-50" alt="Resim 6">
-                                  </div>
-                                
-                                
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./assets/img/192.png" class="d-block w-50" alt="Resim 1">
-                                      </div>
-                                      <div class="col">
-                                        <img src="./assets/img/194.png" class="d-block w-50" alt="Resim 2">
-                                      </div>
-                                    <div class="col">
-                                        <img src="./assets/img/187.png" class="d-block w-50" alt="Resim 4">
-                                      </div>
-                                  <div class="col">
-                                    <img src="./assets/img/195.png" class="d-block w-50" alt="Resim 4">
-                                  </div>
-                                  <div class="col">
-                                    <img src="./assets/img/199.png" class="d-block w-50" alt="Resim 5">
-                                  </div>
-                                  <div class="col">
-                                    <img src="./assets/img/200.png" class="d-block w-50" alt="Resim 6">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          
-                          </div>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="markaSliderSec">
+              <div
+                id="myCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div style="min-height: 50px;" class="carousel-item active">
+                    <div class="row">
+                      <div class="col">
+                        <img
+                          src="./assets/img/192.png"
+                          class="d-block w-50"
+                          alt="Resim 1"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/194.png"
+                          class="d-block w-50"
+                          alt="Resim 2"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/195.png"
+                          class="d-block w-50"
+                          alt="Resim 3"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/198.png"
+                          class="d-block w-50"
+                          alt="Resim 4"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/199.png"
+                          class="d-block w-50"
+                          alt="Resim 5"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/200.png"
+                          class="d-block w-50"
+                          alt="Resim 6"
+                        />
+                      </div>
                     </div>
+                  </div>
+                  <div style="min-height: 50px;"  class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <img
+                          src="./assets/img/192.png"
+                          class="d-block w-50"
+                          alt="Resim 1"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/194.png"
+                          class="d-block w-50"
+                          alt="Resim 2"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/32.png"
+                          class="d-block w-50"
+                          alt="Resim 4"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/200.png"
+                          class="d-block w-50"
+                          alt="Resim 4"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/199.png"
+                          class="d-block w-50"
+                          alt="Resim 5"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="./assets/img/200.png"
+                          class="d-block w-50"
+                          alt="Resim 6"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
-<section id="youtubeSec">
-    <div class="container">
+    <section id="youtubeSec">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-8">
-                <div class="youtubeLink">
-<img src="./assets/img/birbasa.jpg" alt="" onclick="redirectToYouTube()">
-                </div>
+          <div class="col-lg-8">
+            <div class="youtubeLink">
+              <img
+                src="./assets/img/birbasa.jpg"
+                alt=""
+                onclick="redirectToYouTube()"
+              />
             </div>
-         
-                <div class="col-lg-4">
-                    <div class="youtubeLink">
- <img src="./assets/img/Screenshot_18.png" alt="" onclick="redirectToYouTubeOne()">
- <img src="./assets/img/beyanname.png" alt="" onclick="redirectToYouTubeTwo()">
-                    </div>
-                </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="youtubeLink">
+              <img
+                src="./assets/img/Screenshot_18.png"
+                alt=""
+                onclick="redirectToYouTubeOne()"
+              />
+              <img
+                src="./assets/img/beyanname.png"
+                alt=""
+                onclick="redirectToYouTubeTwo()"
+              />
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<section id="iconsMedia">
-    <div class="container">
+    <section id="iconsMedia">
+      <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="iconsMediaText">
-                    <a  href="https://www.facebook.com/kargolux.az/"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a  href="https://www.instagram.com/kargolux.az/"><i  class="fa-brands fa-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send/?phone=%2B994125252626&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://t.me/kargoluxaz"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCyzOf7mipPtZt5qK3VIeD-w"><i class="fa-brands fa-youtube"></i></a>
-                   <span>Bizi izləyin</span>
-                </div>
+          <div class="col-12">
+            <div class="iconsMediaText">
+              <a href="https://www.facebook.com/kargolux.az/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/kargolux.az/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=%2B994125252626&text&type=phone_number&app_absent=0"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://t.me/kargoluxaz"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCyzOf7mipPtZt5qK3VIeD-w"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <span>Bizi izləyin</span>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<footer>
-    <div class="container">
+    <footer>
+      <div class="container">
         <div class="row">
-            <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
-                <div class="footerList">
-<h1>Bizimlə əlaqə</h1>
-<p>Saytın əlaqə formundan və buradan göndərilən mesajlar iş günləri ərzində növbəli şəkildə cavablandırılacaqdır</p>
-<div class="footerForm">
-    <input type="text" placeholder="Adınız" required>
-    <input type="text" placeholder="Email" required>
-</div>
-<input type="text" placeholder="Mesajınız" required>
-<button>Göndər</button>
-                </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
+            <div class="footerList">
+              <h1>Bizimlə əlaqə</h1>
+              <p>
+                Saytın əlaqə formundan və buradan göndərilən mesajlar iş günləri
+                ərzində növbəli şəkildə cavablandırılacaqdır
+              </p>
+              <div class="footerForm">
+                <input type="text" placeholder="Adınız" required />
+                <input type="text" placeholder="Email" required />
+              </div>
+              <input type="text" placeholder="Mesajınız" required />
+              <button>Göndər</button>
             </div>
-            <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
-                <div class="footerList">
-
-                  <a href="homepage.html">Ana Səhifə</a>
-                  <a href="tariffs.html">Tariflər</a>
-                  <a href="stores.html">Mağazalar</a>
-                  <a href="services.html">Xidmətlər</a>
-                  <a href="news.html">Xəbərlər</a>
-                  <a href="contact.html">Əlaqə</a>
-                  <a href="about.html">Haqqımızda</a>
-                  <a href="question.html">Suallar</a>
-                  <a href="carriage.html">Daşınma şərtləri</a>
-                  <a href="personal.html">Şəxsi məlumatların qorunması</a>
-                
-                
-                </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
+            <div class="footerList">
+              <a href="homepage.html">Ana Səhifə</a>
+              <a href="tariffs.html">Tariflər</a>
+              <a href="stores.html">Mağazalar</a>
+              <a href="services.html">Xidmətlər</a>
+              <a href="news.html">Xəbərlər</a>
+              <a href="contact.html">Əlaqə</a>
+              <a href="about.html">Haqqımızda</a>
+              <a href="question.html">Suallar</a>
+              <a href="carriage.html">Daşınma şərtləri</a>
+              <a href="personal.html">Şəxsi məlumatların qorunması</a>
             </div>
-            <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
-                <div class="footerList">
-                    <div class="footerListBorder">
-                        <div class="footerText">
-<h1>Ünvanımız</h1>
-<p>Nərimanov rayonu, Faiq Yusifov 16</p>
-</div>
-<div class="footerText">
-    <h1>Telefon nömrələrimiz</h1>
-    <p>+994 12 525 26 26</p>
-    </div>
-    <div class="footerText">
-        <h1>Email</h1>
-        <p>Info@kargolux.az</p>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
+            <div class="footerList">
+              <div class="footerListBorder">
+                <div class="footerText">
+                  <h1>Ünvanımız</h1>
+                  <p>Nərimanov rayonu, Faiq Yusifov 16</p>
+                </div>
+                <div class="footerText">
+                  <h1>Telefon nömrələrimiz</h1>
+                  <p>+994 12 525 26 26</p>
+                </div>
+                <div class="footerText">
+                  <h1>Email</h1>
+                  <p>Info@kargolux.az</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-                    </div>
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="end">
-        <img src="./assets/img/logo (3) (1).png" alt="">
-        <span>
-            © 2021 Kargolux | Bütün Hüquqlar Qorunur</span>
-    </div>
-</footer>
-
-
-
+      </div>
+      <div class="end">
+        <img src="./assets/img/logo (3) (1).png" alt="" />
+        <span> © 2021 Kargolux | Bütün Hüquqlar Qorunur</span>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -718,7 +832,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    
+
     <script src="assets/js/index.js"></script>
   </body>
 </html>
