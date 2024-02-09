@@ -1,123 +1,329 @@
 {
-    "posts": [
-      {
-        "id": "1",
-        "category": "Geyim",
-        "marka": "DeFacto",
-        "link": "https://www.trendyol.com/",
-        "price": "1190",
-        "name": "Hırka",
-        "image": "https://cdn.dsmcdn.com/ty988/product/media/images/prod/SPM/PIM/20230824/15/4ce64385-02ad-342a-9c36-2ebb9c18838e/1_org_zoom.jpg"
-      },
-       
-        {
-          "id": "2",
-          "category": "Ayakkabı",
-          "marka": "Pull & Bear",
-          "link": "https://www.trendyol.com/",
-          "price": "1190",
-          "name": "Ayakkabı",
-          "image": "https://cdn.dsmcdn.com/ty995/product/media/images/prod/SPM/PIM/20230906/10/d7247cfc-bb81-371a-9d5f-b38620ddf367/1_org_zoom.jpg"
-        },
-        {
-          "id": "3",
-          "category": "Çanta",
-          "marka": "Bershka",
-          "link": "https://www.trendyol.com/",
-          "price": "440",
-          "name": "Çanta",
-          "image": "https://cdn.dsmcdn.com/ty674/product/media/images/20230104/14/251818737/666311523/1/1_org_zoom.jpg"
-        },
-        {
-            "id": "4",
-            "category": "Geyim",
-            "marka": "Stradivarius",
-            "link": "https://www.trendyol.com/",
-            "price": "520",
-            "name": "T-shirt",
-            "image": "https://cdn.dsmcdn.com/ty533/product/media/images/20220912/12/174343524/568035274/1/1_org_zoom.jpg"
-          },
-      
-        {
-          "id": "5",
-          "category": "Geyim",
-          "marka": "Bershka",
-          "link": "https://www.trendyol.com/",
-          "price": "640",
-          "name": "Mont",
-          "image": "https://cdn.dsmcdn.com/ty969/product/media/images/20230720/14/395233332/980331180/1/1_org_zoom.jpg"
-        },
-        {
-          "id": "6",
-          "category": "Geyim",
-          "marka": "Stradivarius",
-          "link": "https://www.trendyol.com/",
-          "price": "520",
-          "name": "Bluz",
-          "image": "https://cdn.dsmcdn.com/ty990/product/media/images/prod/SPM/PIM/20230823/18/c9dc7751-5d47-3fae-b7e1-3f3c95115ca8/1_org_zoom.jpg"
-        },
-          
-          {
-            "id": "7",
-            "category": "Çanta",
-            "marka": "Stradivarius",
-            "link": "https://www.trendyol.com/",
-            "price": "990",
-            "name": "Çanta",
-            "image": "https://cdn.dsmcdn.com/ty1112/product/media/images/prod/SPM/PIM/20231229/12/212bd61c-b211-361c-a25d-710e553843dc/1_org_zoom.jpg"
-          },
-      
-          {
-            "id": "8",
-            "category": "Geyim",
-            "marka": "Pull & Bear",
-            "link": "https://www.trendyol.com/",
-            "price": "320",
-            "name": "T-shirt",
-            "image": "https://cdn.dsmcdn.com/ty831/product/media/images/20230418/14/327452037/233589006/1/1_org_zoom.jpg"
-          },
-        {
-          "id": "9",
-          "category": "Geyim",
-          "marka": "DeFacto",
-          "link": "https://www.trendyol.com/",
-          "price": "160",
-          "name": "Kazak",
-          "image": "https://cdn.dsmcdn.com/ty972/product/media/images/20230729/2/397878014/983618182/1/1_org_zoom.jpg"
-        },
-        {
-            "id": "10",
-            "category": "Geyim",
-            "marka": "Addax",
-            "link": "https://www.trendyol.com/",
-            "price": "790",
-            "name": "T-shirt",
-            "image": "https://cdn.dsmcdn.com/ty1025/product/media/images/prod/SPM/PIM/20231025/18/e2cb33ac-8c7d-3855-a55b-ea0ee13df241/1_org_zoom.jpg"
-          },
-        {
-          "id": "11",
-          "category": "Ayakkabı",
-          "marka": "Pull & Bear",
-          "link": "https://www.trendyol.com/",
-          "price": "990",
-          "name": "Bot",
-          "image": "https://cdn.dsmcdn.com/ty1096/product/media/images/prod/SPM/PIM/20231219/11/3facfd82-5afd-3b79-8d13-d95f59531d0b/1_org_zoom.jpg"
-        },
-        {
-          "id": "12",
-          "category": "Geyim",
-          "marka": "Addax",
-          "link": "https://www.trendyol.com/",
-          "price": "990",
-          "name": "Bluz",
-          "image": "https://cdn.dsmcdn.com/ty1152/product/media/images/prod/SPM/PIM/20240131/13/06dbded8-8696-3889-81c3-e12d7533188b/1_org_zoom.jpg"
-        }
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
+  "posts": [
+    {
+      "id": "1",
+      "category": "Geyim",
+      "marka": "DeFacto",
+      "link": "https://www.trendyol.com/",
+      "price": "1190",
+      "name": "Hırka",
+      "image": "https://cdn.dsmcdn.com/ty988/product/media/images/prod/SPM/PIM/20230824/15/4ce64385-02ad-342a-9c36-2ebb9c18838e/1_org_zoom.jpg"
+    },
+    {
+      "id": "2",
+      "category": "Ayakkabı",
+      "marka": "Pull & Bear",
+      "link": "https://www.trendyol.com/",
+      "price": "1190",
+      "name": "Ayakkabı",
+      "image": "https://cdn.dsmcdn.com/ty995/product/media/images/prod/SPM/PIM/20230906/10/d7247cfc-bb81-371a-9d5f-b38620ddf367/1_org_zoom.jpg"
+    },
+    {
+      "id": "3",
+      "category": "Çanta",
+      "marka": "Bershka",
+      "link": "https://www.trendyol.com/",
+      "price": "440",
+      "name": "Çanta",
+      "image": "https://cdn.dsmcdn.com/ty674/product/media/images/20230104/14/251818737/666311523/1/1_org_zoom.jpg"
+    },
+    {
+      "id": "4",
+      "category": "Geyim",
+      "marka": "Stradivarius",
+      "link": "https://www.trendyol.com/",
+      "price": "520",
+      "name": "T-shirt",
+      "image": "https://cdn.dsmcdn.com/ty533/product/media/images/20220912/12/174343524/568035274/1/1_org_zoom.jpg"
+    },
+    {
+      "id": "5",
+      "category": "Geyim",
+      "marka": "Bershka",
+      "link": "https://www.trendyol.com/",
+      "price": "640",
+      "name": "Mont",
+      "image": "https://cdn.dsmcdn.com/ty969/product/media/images/20230720/14/395233332/980331180/1/1_org_zoom.jpg"
+    },
+    {
+      "id": "6",
+      "category": "Geyim",
+      "marka": "Stradivarius",
+      "link": "https://www.trendyol.com/",
+      "price": "520",
+      "name": "Bluz",
+      "image": "https://cdn.dsmcdn.com/ty990/product/media/images/prod/SPM/PIM/20230823/18/c9dc7751-5d47-3fae-b7e1-3f3c95115ca8/1_org_zoom.jpg"
+    },
+    {
+      "id": "7",
+      "category": "Çanta",
+      "marka": "Stradivarius",
+      "link": "https://www.trendyol.com/",
+      "price": "990",
+      "name": "Çanta",
+      "image": "https://cdn.dsmcdn.com/ty1112/product/media/images/prod/SPM/PIM/20231229/12/212bd61c-b211-361c-a25d-710e553843dc/1_org_zoom.jpg"
+    },
+    {
+      "id": "8",
+      "category": "Geyim",
+      "marka": "Pull & Bear",
+      "link": "https://www.trendyol.com/",
+      "price": "320",
+      "name": "T-shirt",
+      "image": "https://cdn.dsmcdn.com/ty831/product/media/images/20230418/14/327452037/233589006/1/1_org_zoom.jpg"
+    },
+    {
+      "id": "9",
+      "category": "Geyim",
+      "marka": "DeFacto",
+      "link": "https://www.trendyol.com/",
+      "price": "160",
+      "name": "Kazak",
+      "image": "https://cdn.dsmcdn.com/ty972/product/media/images/20230729/2/397878014/983618182/1/1_org_zoom.jpg"
+    },
+    {
+      "id": "10",
+      "category": "Geyim",
+      "marka": "Addax",
+      "link": "https://www.trendyol.com/",
+      "price": "790",
+      "name": "T-shirt",
+      "image": "https://cdn.dsmcdn.com/ty1025/product/media/images/prod/SPM/PIM/20231025/18/e2cb33ac-8c7d-3855-a55b-ea0ee13df241/1_org_zoom.jpg"
+    },
+    {
+      "id": "11",
+      "category": "Ayakkabı",
+      "marka": "Pull & Bear",
+      "link": "https://www.trendyol.com/",
+      "price": "990",
+      "name": "Bot",
+      "image": "https://cdn.dsmcdn.com/ty1096/product/media/images/prod/SPM/PIM/20231219/11/3facfd82-5afd-3b79-8d13-d95f59531d0b/1_org_zoom.jpg"
+    },
+    {
+      "id": "12",
+      "category": "Geyim",
+      "marka": "Addax",
+      "link": "https://www.trendyol.com/",
+      "price": "990",
+      "name": "Bluz",
+      "image": "https://cdn.dsmcdn.com/ty1152/product/media/images/prod/SPM/PIM/20240131/13/06dbded8-8696-3889-81c3-e12d7533188b/1_org_zoom.jpg"
     }
+  ],
+  "registers": [
+    {
+      "id": "1",
+      "name": "Aydan",
+      "surname": "Esed",
+      "phone": "704058363",
+      "email": "aydanesedova@gmail.com",
+      "date": "30.11.2003"
+    },
+    {
+      "id": "4adc",
+      "name": "FIlyar",
+      "surname": "Mirzeyeva",
+      "email": "11111111111111111111@gmail",
+      "phoneNumber": "050null",
+      "birthDate": "275760-05-05",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "55555555",
+      "idPin": "5555555",
+      "city": "AGS",
+      "branch": "28may",
+      "address": "55555555555",
+      "password": "55555555555",
+      "confPassword": "55555555555"
+    },
+    {
+      "id": "6c5c",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2004-11-11",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Yasamal",
+      "address": "baki",
+      "password": "123123123a",
+      "confPassword": "123123123a"
+    },
+    {
+      "id": "231d",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Khirdalan",
+      "address": "baki",
+      "password": "http://localhost:3000/register",
+      "confPassword": "http://localhost:3000/register"
+    },
+    {
+      "id": "2496",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Khirdalan",
+      "address": "baki",
+      "password": "12345678a",
+      "confPassword": "12345678a"
+    },
+    {
+      "id": "51aa",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Akhmadli",
+      "address": "baki",
+      "password": "123456789",
+      "confPassword": "123456789"
+    },
+    {
+      "id": "c029",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Akhmadli",
+      "address": "baki",
+      "password": "123456789",
+      "confPassword": "123456789"
+    },
+    {
+      "id": "4136",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Sumgait",
+      "address": "baki",
+      "password": "123456789",
+      "confPassword": "123456789"
+    },
+    {
+      "id": "d33a",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Sumgait",
+      "address": "baki",
+      "password": "123123123",
+      "confPassword": "123123123"
+    },
+    {
+      "id": "c331",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Akhmadli",
+      "address": "baki",
+      "password": "123123123a",
+      "confPassword": "123123123a"
+    },
+    {
+      "id": "d778",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "Vətəndaşlıq",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Yasamal",
+      "address": "baki",
+      "password": "123123123a",
+      "confPassword": "123123123a"
+    },
+    {
+      "id": "614d",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "Vətəndaşlıq",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Yasamal",
+      "address": "baki",
+      "password": "1231231234",
+      "confPassword": "1231231234"
+    },
+    {
+      "id": "3c98",
+      "name": "john",
+      "surname": "aaaaaaaa",
+      "email": "jonn@gmail.com",
+      "phoneNumber": "050null",
+      "birthDate": "2024-02-06",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Khirdalan",
+      "address": "baki",
+      "password": "12312312345",
+      "confPassword": "12312312345"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}

@@ -13,7 +13,7 @@ const renderData = async () => {
     <img src="${item.image}" alt="${item.name}">
     <div class="markaName">  
     <p>${item.marka}</p>
-    <h4>${item.name}</h4>
+    <h4>${item.name}</h4> 
     </div>
     <p><i class="fa-solid fa-tag"></i> ${item.price} TL</p>
     </a>

@@ -133,7 +133,7 @@
           <div class="left col-lg-7 col-md-12">
             <div class="register-form">
               <div class="title">Qeydiyyat formu</div>
-              <form
+              <form  id="registerForm"
                 method="post"
                 action="#"
                 class="form col-12 natural-person"
@@ -160,6 +160,36 @@
                       max="12"
                       required
                     />
+                  </div>
+                </div>
+                 <div class="form-comp">
+                  <div class="form-group col-5 d-flex flex-column">
+                    <input
+                      type="text"
+                      id="date"
+                      placeholder="Doğum tarixi"
+                      name="birth-date"
+                      style="cursor: pointer"
+                      onfocus="(this.type='date')"
+                      onblur="(this.type='text')"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-5 d-flex flex-column">
+                    <select
+                      name="nationality"
+                      id="nationality"
+                      class="nationality"
+                      required
+                    >
+                      <option hidden>Vətəndaşlıq</option>
+                      <option value="resident">
+                        Azərbaycan Respublikasının vətəndaşı (Rezident)
+                      </option>
+                      <option value="non-resident">
+                        Başqa ölkənin vətəndaşı (Qeyri-rezident)
+                      </option>
+                    </select>
                   </div>
                 </div>
                 <div class="form-comp">
@@ -201,36 +231,7 @@
                     />
                   </div>
                 </div>
-                <div class="form-comp">
-                  <div class="form-group col-5 d-flex flex-column">
-                    <input
-                      type="text"
-                      id="date"
-                      placeholder="Doğum tarixi"
-                      name="birth-date"
-                      style="cursor: pointer"
-                      onfocus="(this.type='date')"
-                      onblur="(this.type='text')"
-                      required
-                    />
-                  </div>
-                  <div class="form-group col-5 d-flex flex-column">
-                    <select
-                      name="nationality"
-                      id="nationality"
-                      class="nationality"
-                      required
-                    >
-                      <option hidden>Vətəndaşlıq</option>
-                      <option value="resident">
-                        Azərbaycan Respublikasının vətəndaşı (Rezident)
-                      </option>
-                      <option value="non-resident">
-                        Başqa ölkənin vətəndaşı (Qeyri-rezident)
-                      </option>
-                    </select>
-                  </div>
-                </div>
+               
                 <div class="form-comp">
                   <div class="form-group col-5 d-flex">
                     <select
@@ -562,6 +563,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/register.js"></script>
   </body>
 </html>
