@@ -11,7 +11,7 @@ const renderData = async () => {
     myDiv.innerHTML = `
     <a href="${item.link}" target="_blank">
     <img src="${item.image}" alt="${item.name}">
-    <div class="markaName">  
+    <div class="theMarka">  
     <p>${item.marka}</p>
     <h4>${item.name}</h4> 
     </div>
@@ -25,6 +25,8 @@ const renderData = async () => {
 window.onload = () => {
   renderData();
 };
+
+
 
 // SearchByName
 const serachInput = document.getElementById("serachInput");
@@ -47,7 +49,7 @@ const searchByName = async (name) => {
       card.innerHTML = `
       <a href="${item.link}" target="_blank">
       <img src="${item.image}" alt="${item.name}">
-      <div class="markaName">  
+      <div class="theMarka">  
       <p>${item.marka}</p>
       <h4>${item.name}</h4>
       </div>
@@ -65,7 +67,9 @@ serachInput.addEventListener("input", (e) => {
   searchByName(e.target.value);
 });
 
-// Sort Defacto
+
+
+//Defacto Sort 
 const defactoButton = document.getElementById("defacto");
 
 defactoButton.addEventListener("click", async () => {
@@ -96,7 +100,7 @@ function renderPosts(posts) {
     card.innerHTML = `
     <a href="${item.link}" target="_blank">
     <img src="${item.image}" alt="${item.name}">
-    <div class="markaName">  
+    <div class="theMarka">  
     <p>${item.marka}</p>
     <h4>${item.name}</h4>
     </div>
@@ -107,7 +111,7 @@ function renderPosts(posts) {
   });
 }
 
-// Sort Bershka
+// Bershka Sort 
 const bershkaButton = document.getElementById("bershka");
 
 bershkaButton.addEventListener("click", async () => {
@@ -138,7 +142,7 @@ function renderPosts(posts) {
     card.innerHTML = `
     <a href="${item.link}" target="_blank">
     <img src="${item.image}" alt="${item.name}">
-    <div class="markaName">  
+    <div class="theMarka">  
     <p>${item.marka}</p>
     <h4>${item.name}</h4>
     </div>
@@ -149,7 +153,7 @@ function renderPosts(posts) {
   });
 }
 
-// Sort Pull Bear
+// Pull and Bear Sort 
 const pullBearButton = document.getElementById("pullBear");
 
 pullBearButton.addEventListener("click", async () => {
@@ -180,7 +184,7 @@ function renderPosts(posts) {
     card.innerHTML = `
     <a href="${item.link}" target="_blank">
     <img src="${item.image}" alt="${item.name}">
-    <div class="markaName">  
+    <div class="theMarka">  
     <p>${item.marka}</p>
     <h4>${item.name}</h4>
     </div>
@@ -192,7 +196,7 @@ function renderPosts(posts) {
 }
 
 
-// Sort Stradivarius
+// Stradivarius Sort 
 const stradivariusButton = document.getElementById("stradivarius");
 
 stradivariusButton.addEventListener("click", async () => {
@@ -223,7 +227,7 @@ function renderPosts(posts) {
     card.innerHTML = `
     <a href="${item.link}" target="_blank">
     <img src="${item.image}" alt="${item.name}">
-    <div class="markaName">  
+    <div class="theMarka">  
     <p>${item.marka}</p>
     <h4>${item.name}</h4>
     </div>
@@ -234,11 +238,8 @@ function renderPosts(posts) {
   });
 }
 
-// sort Addax
-
-
+//  Addax sort
 const addaxButton = document.getElementById("addax");
-
 addaxButton.addEventListener("click", async () => {
   try {
     const res = await fetch("http://localhost:3000/posts");

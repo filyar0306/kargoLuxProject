@@ -6,10 +6,7 @@ function calculateShipping() {
   var volume = parseFloat(document.getElementById('volume').value);
   var weight = parseFloat(document.getElementById('weight').value);
 
-  // Kargo ücretini hesapla (Örnek bir formül kullanıldı, gerçek bir formül kullanmalısınız)
   var shippingCost = (length + width + volume + weight) * 0.1;
-
-  // Sonucu HTML'de belirtilen bir yere yazdır
   document.getElementById('result').innerHTML = 'Kargo Ücreti: $' + shippingCost.toFixed(2);
 }
 
@@ -22,9 +19,10 @@ function resetCalculator() {
   document.getElementById('volume').value = '';
   document.getElementById('weight').value = '';
 
-  // Sonucu HTML'de belirtilen yere sıfırla
   document.getElementById('result').innerHTML = '';
 }
+
+
 
 
 
@@ -46,8 +44,6 @@ function resetCalculator() {
   });
 
 
-
-
   document.addEventListener("DOMContentLoaded", function () {
     const branchDeliveryLink = document.querySelector(".branch");
     const addressDeliveryLink = document.querySelector(".home");
@@ -66,23 +62,20 @@ function resetCalculator() {
   });
 
 
+//   window.onload = function () {
+//     OpenBootstrapPopup();
+// };
+// function OpenBootstrapPopup() {
+//     $("#simpleModal").modal('show');
+// }
+// const closeH=()=>{
+// const modal=document.querySelector('.modal')
+// const modalbck=document.querySelector('.modal-backdrop')
+// console.log('asd');
+// modal.style.display="none"
+// modalbck.style.display="none"
 
-  window.onload = function () {
-    OpenBootstrapPopup();
-};
-function OpenBootstrapPopup() {
-    $("#simpleModal").modal('show');
-}
-const closeH=()=>{
-const modal=document.querySelector('.modal')
-const modalbck=document.querySelector('.modal-backdrop')
-console.log('asd');
-modal.style.display="none"
-modalbck.style.display="none"
-
-}
-
-
+// }
 
 
 

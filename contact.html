@@ -151,9 +151,9 @@
               <i class="fa-regular fa-message"></i>
               <h3>Sosial Media</h3>
               <div class="contactMapTxt">
-                <p><i class="fa-brands fa-facebook-f"></i> kargoLux.az</p>
-                <p><i class="fa-brands fa-instagram"></i> kargoLux.az</p>
-                <p><i class="fa-brands fa-linkedin-in"></i> kargoLux.az</p>
+                <a href="https://www.facebook.com/kargolux.az/" ><i class="fa-brands fa-facebook-f"></i> kargoLux.az</a>
+                <a href="https://www.instagram.com/kargolux.az/"><i class="fa-brands fa-instagram"></i> kargoLux.az</a>
+                <a href="https://az.linkedin.com/company/kargolux"><i class="fa-brands fa-linkedin-in"></i> kargoLux.az</a>
               </div>
             </div>
           </div>
@@ -242,12 +242,16 @@
                 Saytın əlaqə formundan və buradan göndərilən mesajlar iş günləri
                 ərzində növbəli şəkildə cavablandırılacaqdır
               </p>
-              <div class="footerForm">
-                <input type="text" placeholder="Adınız" required />
-                <input type="text" placeholder="Email" required />
+              
+              <form id="myform">
+                 <div class="footerForm">
+                <input id="first-name" type="text" placeholder="Adınız" required />
+                <input id="email-address"  type="email" placeholder="Email" required />
               </div>
-              <input type="text" placeholder="Mesajınız" required />
+              <input id="text-message" type="text" placeholder="Mesajınız" required />
               <button>Göndər</button>
+            </form>
+         
             </div>
           </div>
           <div class="col-12 col-xl-4 col-lg-4 col-sm-6 col-md-12">
@@ -312,7 +316,12 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
-    <script src="assets/js/contact.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+    integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script src="./assets/js/contact.js"></script>
   </body>
 </html>

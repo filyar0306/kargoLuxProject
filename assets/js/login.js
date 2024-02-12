@@ -10,17 +10,21 @@ loginForm.addEventListener('submit', async (e) => {
   const emailError = document.querySelector('.email .error');
   const passwordError = document.querySelector('.password .error');
 
+
   if (!email) {
     emailError.textContent = 'Email boş qoyula bilməz.';
     emailError.style.display = 'block';
     return;
+    
   }
-
   if (!password) {
     passwordError.textContent = 'Şifrə boş qoyula bilməz.';
     passwordError.style.display = 'block';
     return;
   }
+  
+
+
 
   try {
     const response = await fetch('http://localhost:3000/registers');
@@ -38,6 +42,6 @@ loginForm.addEventListener('submit', async (e) => {
 
   } catch (error) {
     console.error(error);
-    alert('Giriş uğursuz oldu. E-poçt və parolunuzu yoxlayın və yenidən cəhd edin.');
+    alert('Belə bir hesab qeydə alınmadı. E-poçt və parolunuzu yoxlayın və yenidən cəhd edin.');
   }
 });
