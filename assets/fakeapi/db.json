@@ -28,15 +28,6 @@
       "image": "https://cdn.dsmcdn.com/ty674/product/media/images/20230104/14/251818737/666311523/1/1_org_zoom.jpg"
     },
     {
-      "id": "4",
-      "category": "Geyim",
-      "marka": "Stradivarius",
-      "link": "https://www.trendyol.com/",
-      "price": "520",
-      "name": "T-shirt",
-      "image": "https://cdn.dsmcdn.com/ty533/product/media/images/20220912/12/174343524/568035274/1/1_org_zoom.jpg"
-    },
-    {
       "id": "5",
       "category": "Geyim",
       "marka": "Bershka",
@@ -107,6 +98,12 @@
       "price": "990",
       "name": "Bluz",
       "image": "https://cdn.dsmcdn.com/ty1152/product/media/images/prod/SPM/PIM/20240131/13/06dbded8-8696-3889-81c3-e12d7533188b/1_org_zoom.jpg"
+    },
+    {
+      "id": "4",
+      "marka": "Bershka",
+      "image": "https://cdn.dsmcdn.com/ty1015/product/media/images/prod/SPM/PIM/20231016/12/09e0b547-debc-3da9-891b-fe113faffdc9/1_org_zoom.jpg",
+      "price": "990"
     }
   ],
   "registers": [
