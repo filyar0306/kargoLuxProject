@@ -406,5 +406,41 @@
       "email": "filyr@gmail.com",
       "message": "hello"
     }
+  ],
+  "tracking": [
+    {
+      "declared": true,
+      "name": "T-shirt",
+      "marka": "Pull & Bear",
+      "price": "440",
+      "where": "Turkiye",
+      "tracking": "1345",
+      "date": "12 yanvar, 2024",
+      "weight": "2.050 kq",
+      "customerName": "Filyar",
+      "surname": "Mirzeyeva",
+      "phone": "0557371749",
+      "email": "filyr@gmail.com",
+      "image": "https://lh6.googleusercontent.com/tHasn7j1f-SNODW0GkONVGUCgOGolhLVcQ8C-YOazQfEKK8oWI1iZ8-1vKe5uc4xNL74_uZV218sqF43mzFuMxTQFGFAi-IdZghvEcWz3jNWV10lOkB_kDj4Fpe6FB_4qD_h_z1k",
+      "id": "1",
+      "status": "Çeşidləmə"
+    },
+    {
+     
+      "name": "Bluz",
+      "marka": "Stradivarius",
+      "price": "520",
+      "where": "Turkiye",
+      "tracking": "123123456",
+      "date": "30 yanvar, 2024",
+      "weight": "2.450 kq",
+      "customerName": "Aydan",
+      "surname": "Esedova",
+      "phone": "0557371749",
+      "email": "aydan@gmail.com",
+      "image": "https://lh6.googleusercontent.com/tHasn7j1f-SNODW0GkONVGUCgOGolhLVcQ8C-YOazQfEKK8oWI1iZ8-1vKe5uc4xNL74_uZV218sqF43mzFuMxTQFGFAi-IdZghvEcWz3jNWV10lOkB_kDj4Fpe6FB_4qD_h_z1k",
+      "id": "2",
+      "status": "Gömrük"
+    }
   ]
 }
