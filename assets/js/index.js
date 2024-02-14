@@ -82,3 +82,14 @@ function resetCalculator() {
 $('#myCarousel').carousel({
   interval: 3000,
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Sayfa yüklendiğinde local storage'dan kullanıcı adını al
+  const currentUser = localStorage.getItem('currentUser');
+
+  // Kullanıcı adını göster
+  if (currentUser) {
+      document.getElementById('login-button').innerText = ` ${currentUser}!`;
+  }
+});

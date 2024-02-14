@@ -1066,3 +1066,9 @@ footer .end span {
   font-size: 14px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 300px) {
+  #new .newSec {
+    text-align: center;
+  }
+}

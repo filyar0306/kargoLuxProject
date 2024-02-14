@@ -38,10 +38,11 @@ loginForm.addEventListener('submit', async (e) => {
       throw new Error('Invalid email or password.');
     }
 
-    window.location.href = 'stores.html';
+    window.location.href = 'index.html';
 
   } catch (error) {
     console.error(error);
     alert('Belə bir hesab qeydə alınmadı. E-poçt və parolunuzu yoxlayın və yenidən cəhd edin.');
   }
 });
+
