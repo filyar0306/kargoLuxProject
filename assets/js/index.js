@@ -1,3 +1,4 @@
+
 function calculateShipping() {
   var packageType = document.getElementById('package-type').value;
   var city = document.getElementById('city').value;
@@ -5,6 +6,12 @@ function calculateShipping() {
   var width = parseFloat(document.getElementById('width').value);
   var volume = parseFloat(document.getElementById('volume').value);
   var weight = parseFloat(document.getElementById('weight').value);
+
+  // Herhangi bir giriş boşsa veya sayısal değilse, NaN değeri yerine 0.00 olarak atama yap
+  if (isNaN(length) || isNaN(width) || isNaN(volume) || isNaN(weight)) {
+    document.getElementById('result').innerHTML = 'Kargo Ücreti: $0.00';
+    return;
+  }
 
   var shippingCost = (length + width + volume + weight) * 0.1;
   document.getElementById('result').innerHTML = 'Kargo Ücreti: $' + shippingCost.toFixed(2);
@@ -21,7 +28,6 @@ function resetCalculator() {
 
   document.getElementById('result').innerHTML = '';
 }
-
 
 
 
@@ -62,20 +68,7 @@ function resetCalculator() {
   });
 
 
-//   window.onload = function () {
-//     OpenBootstrapPopup();
-// };
-// function OpenBootstrapPopup() {
-//     $("#simpleModal").modal('show');
-// }
-// const closeH=()=>{
-// const modal=document.querySelector('.modal')
-// const modalbck=document.querySelector('.modal-backdrop')
-// console.log('asd');
-// modal.style.display="none"
-// modalbck.style.display="none"
 
-// }
 
 
 
@@ -84,12 +77,57 @@ $('#myCarousel').carousel({
 })
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Sayfa yüklendiğinde local storage'dan kullanıcı adını al
-  const currentUser = localStorage.getItem('currentUser');
 
-  // Kullanıcı adını göster
-  if (currentUser) {
-      document.getElementById('login-button').innerText = ` ${currentUser}!`;
-  }
+const userbtn = document.querySelector('.login-button')
+const logout = document.getElementById("logout")
+const signUp = document.getElementById("signUp")
+const signIn = document.getElementById("sign-in")
+const navSign = document.querySelector("#navSign")
+
+const checkUser = () => {
+    loggedUser = JSON.parse(localStorage.getItem('loggedin'))
+    if (loggedUser) {
+        userbtn.textContent = loggedUser.name + " " + loggedUser.surname
+        signIn.style.display = 'none';
+        signUp.style.display = 'none'; 
+   
+     
+
+
+    }
+}
+
+
+const logOut = () => {
+    loggedUser = JSON.parse(localStorage.getItem('loggedin'))
+    if (loggedUser) {
+        localStorage.removeItem("loggedin")
+
+
+    }
+}
+
+logout.addEventListener('click', logOut)
+
+
+
+checkUser()
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const loginButton = document.querySelector('.login-button');
+    const myAccount = document.querySelector('.myAccount');
+
+    // Eğer loginButton varsa ve myAccount varsa
+    if (loginButton && myAccount) {
+        // loginButton'a tıklama olayı ekle
+        loginButton.addEventListener('click', function () {
+            // myAccount'ın display özelliğini kontrol et ve değiştir
+            if (myAccount.style.display === 'none' || myAccount.style.display === '') {
+                myAccount.style.display = 'block';
+            } else {
+                myAccount.style.display = 'none';
+            }
+        });
+    }
 });

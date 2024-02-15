@@ -158,15 +158,18 @@ header nav .navDiv .headButton button {
   align-items: center;
   margin-top: 2rem;
 }
-#login .left .form .form-group .email, #login .left .form .form-group .password {
+#login .left .form .form-group .email,
+#login .left .form .form-group .password {
   width: 50%;
 }
-#login .left .form .form-group .email label, #login .left .form .form-group .password label {
+#login .left .form .form-group .email label,
+#login .left .form .form-group .password label {
   font-size: 15px;
   margin-left: 0.5rem;
   margin-bottom: 5px;
 }
-#login .left .form .form-group .email input, #login .left .form .form-group .password input {
+#login .left .form .form-group .email input,
+#login .left .form .form-group .password input {
   width: 100%;
   height: 45px;
   border: 1px solid #cecee2;
@@ -176,7 +179,8 @@ header nav .navDiv .headButton button {
   position: relative;
   outline: none;
 }
-#login .left .form .form-group .email .hidden, #login .left .form .form-group .password .hidden {
+#login .left .form .form-group .email .hidden,
+#login .left .form .form-group .password .hidden {
   color: #fd475d;
   font-size: 12px;
   float: right;

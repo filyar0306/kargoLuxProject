@@ -48,6 +48,16 @@
                   >
                 </li>
               </ul>
+              <div class="loginDiv">
+                <p class="login-button"></p>
+                <div class="myAccount">
+                    <div class="userLogout">
+                        <a href="declare.html"><button><i class="fa-regular fa-user"></i> Hesabım</button></a>
+                        <a href=""><button id="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Çıxış</button></a>
+                    </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -121,8 +131,10 @@
             </ul>
           </div>
           <div class="headButton">
-            <a href="login.html">Giriş et</a>
-            <a href="register.html"><button id="login-button">Qeydiyyat</button></a>
+            <a style="text-decoration: none;" id="sign-in" href="login.html">Giriş et</a>
+            <a href="register.html"><button id="signUp">Qeydiyyat</button></a>
+            
+            
           </div>
         </div>
       </nav>
@@ -132,11 +144,12 @@
         <section id="dashboard">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-xl-3 col-lg-12 col-md-12 col-sm-12">
                         <div class="dashboard-list">
                             <div class="userAbout">
-<img style="width: 90%;" src="./assets/img/hevale.png" alt="">
+                                
                             </div>
+                            <div class="userId"></div>
                             <a href="#" class="declaration">
                                 <i class="fa-solid fa-plus"></i> Bəyan et</a>
                             <a href="#" class="invite">
@@ -144,40 +157,36 @@
                             </a>
                             <div class="store">
                                 <ul>
+                                  <li><a href=""><i class="fa-solid fa-box"></i> Şəxsi məlumatlarım</a></li>
+                                  <li><a href=""><i class="fa-solid fa-box"></i> Türkiyyə ünvanım</a></li>
+                                  <li><a href=""><i class="fa-solid fa-box"></i> Sifarişlər</a></li>
                                     <li><a href=""><i class="fa-solid fa-box"></i> Bağlamalar</a></li>
-                                    <li><a href=""><i class="fa-solid fa-box"></i> Şəxsi məlumatlarım</a></li>
-                                    <li><a href=""><i class="fa-solid fa-box"></i> Türkiyyə ünvanım</a></li>
-                                    <li><a href=""><i class="fa-solid fa-box"></i> Sifarişlər</a></li>
-                                    <li><a href=""><i class="fa-solid fa-box"></i> Kuryer sifarişi</a></li>
                                     <h2>Mağazalar</h2>
-                                    <li><a href="https://www.defacto.com/de-de"><i class="fa-solid fa-ticket"></i> Defacto</a>
+                                    <li><a href="https://www.defacto.com/de-de"><i class="fa-solid fa-ticket"></i></i> Defacto</a>
 
                                     </li>
                                     <li><a href="https://www.bershka.com/az/h-woman.html"><i class="fa-solid fa-ticket"></i> Bershka</a>
 
                                     </li>
-   
+                            
                                     <li><a href="https://www.stradivarius.com/ww/"><i class="fa-solid fa-ticket"></i> Stradivarius</a>
 
                                     </li>
-       
-                                    <li><a href="https://www.pullandbear.com/tr/en/"><i class="fa-solid fa-ticket"></i> Pull & Bear</a>
+                                    <li><a href=""><i class="fa-solid fa-ticket"></i> Addax</a>
 
                                     </li>
-                                  
-                                    <li><a href="https://www.addax.com.tr/"><i class="fa-solid fa-ticket"></i> Addax</a>
-
-                            </li>
                                  
-                               
-                                    <li><a href="index.html"><i
-                                                class="fa-solid fa-arrow-right-from-bracket"></i><button>Çıxış</button></a>
+                                    <li><a href="https://www.pullandbear.com/tr/en/"><i class="fa-solid fa-ticket"></i> Pull&Bear</a>
+
                                     </li>
+                                 
+                                   
+                                  
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12 col-xl-9 col-lg-12 col-md-12 col-sm-12">
                         <div class="packings">
                             <div class="container">
                                 <div class="row">
@@ -193,7 +202,7 @@
                                                 </div>
                                             </div>
                                             <div class="declare-value">
-                                                <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                                                <i class="fa-solid fa-money-bill moneyIcon"></i>
                                                 <div class="declare-about money">
                                                     <span>
                                                         Daşınma balansım
@@ -215,7 +224,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="myOrders">
-                                            <a style=" text-decoration: none;" href="declare.html"><h2>Aktiv bağlamalarım</h2></a>
+                                            <a href="declare.html"><h2>Aktiv bağlamalarım</h2></a>
                                         <div class="declare-customer">
                                         </div>
                                         </div>

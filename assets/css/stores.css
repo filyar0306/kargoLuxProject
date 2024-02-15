@@ -183,7 +183,9 @@ header nav .navDiv .headButton button {
   color: white;
 }
 #stores .store-wrapper {
-  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #stores .store-wrapper .store {
   margin-bottom: 2rem;
@@ -191,7 +193,7 @@ header nav .navDiv .headButton button {
 #stores .store-wrapper .store a {
   display: flex;
   justify-content: center;
-  padding: 2.3rem 2rem;
+  padding: 2rem 2rem;
   border: 1px solid #eeeeee;
   border-radius: 10px;
   transition: 0.2s ease-in-out;
@@ -202,7 +204,7 @@ header nav .navDiv .headButton button {
   scale: 105%;
 }
 #stores .store-wrapper .store img {
-  width: 100%;
+  max-width: 100px;
 }
 
 #intro {
@@ -234,14 +236,14 @@ header nav .navDiv .headButton button {
 }
 #intro .options-title .options {
   cursor: pointer;
-  color: #7C7C7C;
+  color: #7c7c7c;
   font-size: 14px;
   border: 1px solid #c2c1c1 !important;
   border-radius: 5px;
 }
 #intro .options-title .options .option-button {
   font-size: 14px;
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 #intro .options-title .input-title {
   border: 1px solid #c2c1c1;
@@ -257,13 +259,13 @@ header nav .navDiv .headButton button {
   outline: none;
   border: none;
   width: 120px;
-  color: #7C7C7C;
+  color: #7c7c7c;
   font-size: 14px;
   background-color: transparent;
 }
 #intro .options-title .input-title input::placeholder {
   font-size: 14px;
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 #intro .options-title .input-title button {
   border: none;
@@ -271,7 +273,7 @@ header nav .navDiv .headButton button {
   width: 30px;
 }
 #intro .options-title .input-title button i {
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 #intro #best_seller {
   display: flex;

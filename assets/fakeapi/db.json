@@ -104,6 +104,12 @@
       "marka": "Bershka",
       "image": "https://cdn.dsmcdn.com/ty1015/product/media/images/prod/SPM/PIM/20231016/12/09e0b547-debc-3da9-891b-fe113faffdc9/1_org_zoom.jpg",
       "price": "990"
+    },
+    {
+      "id": "13",
+      "marka": "Bershka",
+      "image": "https://cdn.dsmcdn.com/ty1012/product/media/images/prod/SPM/PIM/20231009/13/327ab57a-76e6-3e16-8ac2-ed3c554f1609/1_org_zoom.jpg",
+      "price": "990"
     }
   ],
   "registers": [
@@ -361,50 +367,38 @@
       "address": "baki",
       "password": "123123123aa",
       "confPassword": "123123123aa"
+    },
+    {
+      "id": "91d1",
+      "name": "Filyar",
+      "surname": "mirzeyeva",
+      "email": "example@example.com",
+      "phoneNumber": "050null",
+      "birthDate": "2004-06-03",
+      "nationality": "resident",
+      "idType": "AZE",
+      "idNumber": "11111111",
+      "idPin": "1ns82sd",
+      "city": "SM",
+      "branch": "Sumgait",
+      "address": "baki",
+      "password": "123123123a",
+      "confPassword": "123123123a"
     }
   ],
   "comments": [
-    {
-      "id": "2075",
-      "name": "aaaa",
-      "email": "jonn@gmail.com",
-      "message": "aaaaaaaaaaaaaaaaa"
-    },
-    {
-      "id": "7a7a",
-      "name": "aaaa",
-      "email": "jonn@gmail.com",
-      "message": "aaaaaaaaaaaaaaaaa"
-    },
-    {
-      "id": "b6f4",
-      "name": "aaaa",
-      "email": "jonn@gmail.com",
-      "message": "aaaaaaaaaaaaaaaaa"
-    },
-    {
-      "id": "cab8",
-      "name": "aaaa",
-      "email": "jonn@gmail.com",
-      "message": "aaaaaaaaaaaaaaaaa"
-    },
-    {
-      "id": "5a72",
-      "name": "aaaa",
-      "email": "jonn@gmail.com",
-      "message": "aaaaaaaaaaaaaaaaa"
-    },
-    {
-      "id": "a1bd",
-      "name": "aaaa",
-      "email": "jonn@gmail.com",
-      "message": "aaaaaaaaaaaaaaaaa"
-    },
+
     {
       "id": "6dc3",
       "name": "filyar",
       "email": "filyr@gmail.com",
       "message": "hello"
+    },
+    {
+      "id": "0324",
+      "name": "filyar",
+      "email": "filyr@gmail.com",
+      "message": "sumqayit filialı ile necə əlaqə saxlaya bilərəm"
     }
   ],
   "tracking": [
@@ -423,10 +417,10 @@
       "email": "filyr@gmail.com",
       "image": "https://lh6.googleusercontent.com/tHasn7j1f-SNODW0GkONVGUCgOGolhLVcQ8C-YOazQfEKK8oWI1iZ8-1vKe5uc4xNL74_uZV218sqF43mzFuMxTQFGFAi-IdZghvEcWz3jNWV10lOkB_kDj4Fpe6FB_4qD_h_z1k",
       "id": "1",
-      "status": "Çeşidləmə"
+      "status": "Gömrük"
     },
     {
-     
+      "declared": true,
       "name": "Bluz",
       "marka": "Stradivarius",
       "price": "520",
@@ -440,7 +434,7 @@
       "email": "aydan@gmail.com",
       "image": "https://lh6.googleusercontent.com/tHasn7j1f-SNODW0GkONVGUCgOGolhLVcQ8C-YOazQfEKK8oWI1iZ8-1vKe5uc4xNL74_uZV218sqF43mzFuMxTQFGFAi-IdZghvEcWz3jNWV10lOkB_kDj4Fpe6FB_4qD_h_z1k",
       "id": "2",
-      "status": "Gömrük"
+      "status": "Çeşidləmə"
     }
   ]
 }

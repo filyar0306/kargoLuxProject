@@ -278,7 +278,11 @@ header nav .navDiv .headButton button {
   max-width: 100%;
 }
 
-#myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel button, #myCarousel .carousel-item .mask img {
+#myCarousel h4,
+#myCarousel p,
+#myCarousel a,
+#myCarousel button,
+#myCarousel .carousel-item .mask img {
   -webkit-animation-duration: 1s;
   animation-duration: 1.2s;
   -webkit-animation-fill-mode: both;
@@ -301,7 +305,8 @@ header nav .navDiv .headButton button {
   background-size: cover;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   height: 40px;
   width: 40px;
   padding: 12px;
@@ -335,27 +340,42 @@ header nav .navDiv .headButton button {
   transition-property: opacity;
 }
 
-.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right,
+.carousel-fade .carousel-item.active {
   opacity: 1;
 }
 
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-right.active {
   opacity: 0;
 }
 
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item-prev.active,
+.carousel-fade .carousel-item.active {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 @supports (transform-style: preserve-3d) {
-  .carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+  .carousel-fade .carousel-item-left.active,
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item-prev.active,
+  .carousel-fade .carousel-item.active {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item-prev.active,
+.carousel-fade .carousel-item.active {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -445,7 +465,7 @@ header nav .navDiv .headButton button {
   animation-name: slideInRight;
 }
 
-#xidmetMain {
+#servicesMain {
   width: 100%;
   display: flex;
   align-items: center;
@@ -453,7 +473,7 @@ header nav .navDiv .headButton button {
   border-bottom: 1px solid rgb(211, 211, 211);
   min-height: 900px;
 }
-#xidmetMain .xidmet {
+#servicesMain .services {
   width: 100%;
   display: flex;
   align-items: center;
@@ -463,15 +483,20 @@ header nav .navDiv .headButton button {
   background-color: #f8f7fe;
   border-radius: 20px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  transition: 0.4s;
 }
-#xidmetMain .xidmet .xidmetText {
+#servicesMain .services:hover {
+  filter: drop-shadow(0px 0px 9px rgba(44, 44, 44, 0.2784313725));
+}
+#servicesMain .services .servicesText {
   width: 100%;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-#xidmetMain .xidmet .xidmetText h1 {
+#servicesMain .services .servicesText h1 {
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
@@ -482,7 +507,7 @@ header nav .navDiv .headButton button {
   font-family: Nunito-ExtraBold;
   letter-spacing: 0;
 }
-#xidmetMain .xidmet .xidmetText p {
+#servicesMain .services .servicesText p {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -493,7 +518,7 @@ header nav .navDiv .headButton button {
   font-family: Nunito-ExtraBold;
   letter-spacing: 0;
 }
-#xidmetMain .xidmet .xidmetText button {
+#servicesMain .services .servicesText button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -505,13 +530,13 @@ header nav .navDiv .headButton button {
   margin-top: 30px;
   border: none;
 }
-#xidmetMain .xidmet .xidmetİmg {
+#servicesMain .services .servicesİmg {
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-#xidmetMain .xidmet .xidmetİmg img {
+#servicesMain .services .servicesİmg img {
   width: 60%;
 }
 
@@ -663,6 +688,96 @@ header nav .navDiv .headButton button {
 }
 #smart .smartCustoms .smartCustomText img {
   width: 100%;
+}
+
+#calculator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+#calculator .calculatorMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  min-height: 700px;
+}
+#calculator .calculatorMain h1 {
+  font-weight: 700;
+  size: 25px;
+  font-style: normal;
+  color: #ff6d67;
+  line-height: normal;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+  width: 70%;
+}
+#calculator .calculatorMain p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: rgb(40, 33, 65);
+  line-height: 22px;
+  text-decoration: none;
+  transform: none;
+  font-family: Nunito-ExtraBold;
+  letter-spacing: 0;
+  width: 70%;
+}
+#calculator .calculatorMain .calculator-container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px 5px #9d87e7;
+}
+#calculator .calculatorMain .calculator-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#calculator .calculatorMain .calculator-container form label {
+  width: calc(50% - 5px);
+  margin-top: 10px;
+}
+#calculator .calculatorMain .calculator-container form input[type=number] {
+  width: calc(50% - 5px);
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: transparent;
+}
+#calculator .calculatorMain .calculator-container form select {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: transparent;
+}
+#calculator .calculatorMain button {
+  cursor: pointer;
+  background-color: #ff6d67;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100px;
+  padding: 5px 10px;
+}
+#calculator .calculatorMain #result {
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 #new {

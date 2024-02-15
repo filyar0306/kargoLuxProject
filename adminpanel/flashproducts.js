@@ -118,7 +118,7 @@ const renderData = async () => {
 
 
 // Search
-const searchInp = document.getElementById("searchInp");
+const searchInp = document.getElementById("searchInput");
 let comments = document.getElementById("comment")
 
 const searchByName = async (marka) => {
@@ -166,7 +166,7 @@ let imageInp = document.getElementById("image");
 let priceInp = document.getElementById("price");
 
 let addProducts = document.getElementById("addProducts");
-let myForm = document.getElementById("contact-form");
+let myForm = document.getElementById("myForm");
 
 myForm.addEventListener("submit", function (event) {
   event.preventDefault();

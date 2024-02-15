@@ -8,6 +8,7 @@ const renderProducts = () => {
                 declare.className = "declare";
                 declare.innerHTML = `
                 <h6>${item.marka} <button  class="declareButton">Bəyan et</button></h6>
+                <p style = "color:#7b5ce1;font-size:15px; font-weight:700;border-bottom:1px solid black"><span>${item.status !== undefined ? item.status : ''}</span></p>
                 <p>Məhsulun adı: <span>${item.name}</span></p>
                 <p>İzləmə kodu: <span>${item.tracking}</span></p>
                 <p>Hardan: <span>${item.where}</span></p>
@@ -105,6 +106,74 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+const userAbout = document.querySelector('.userAbout')
+const checkUserName = () => {
+    loggedUser = JSON.parse(localStorage.getItem('loggedin'))
+    if (loggedUser) {
+        userAbout.innerHTML = loggedUser.name + " " + loggedUser.surname + "<br>" + "Id:" + loggedUser.id + "<br>" 
+    }
+}
+
+checkUserName()
+
+
+
+
+
+const userbtn = document.querySelector('.login-button')
+const logout = document.getElementById("logout")
+const signUp = document.getElementById("signUp")
+const signIn = document.getElementById("sign-in")
+const navSign = document.querySelector("#navSign")
+
+const checkUser = () => {
+    loggedUser = JSON.parse(localStorage.getItem('loggedin'))
+    if (loggedUser) {
+        userbtn.textContent = loggedUser.name + " " + loggedUser.surname
+        signIn.style.display = 'none';
+        signUp.style.display = 'none'; 
+   
+     
+
+
+    }
+}
+
+
+const logOut = () => {
+    loggedUser = JSON.parse(localStorage.getItem('loggedin'))
+    if (loggedUser) {
+        localStorage.removeItem("loggedin")
+
+
+    }
+}
+
+logout.addEventListener('click', logOut)
+
+
+
+checkUser()
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const loginButton = document.querySelector('.login-button');
+    const myAccount = document.querySelector('.myAccount');
+
+    // Eğer loginButton varsa ve myAccount varsa
+    if (loginButton && myAccount) {
+        // loginButton'a tıklama olayı ekle
+        loginButton.addEventListener('click', function () {
+            // myAccount'ın display özelliğini kontrol et ve değiştir
+            if (myAccount.style.display === 'none' || myAccount.style.display === '') {
+                myAccount.style.display = 'block';
+            } else {
+                myAccount.style.display = 'none';
+            }
+        });
+    }
+});
 
 
 
@@ -114,59 +183,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
-// const userbtn = document.querySelector('.login-button')
-// const logout = document.getElementById("logout")
-// const signUp = document.getElementById("signUp")
-// const signIn = document.querySelector(".sign-in")
-// const navSign = document.querySelector("#navSign")
-
-// const checkUser = () => {
-//     loggedUser = JSON.parse(localStorage.getItem('loggedin'))
-//     if (loggedUser) {
-//         userbtn.textContent = loggedUser.name + " " + loggedUser.surname
-//         signUp.style.display = "none"
-//         signIn.style.display = "none"
-//         navSign.style.display = "none"
-
-
-//     }
-// }
-
-
-// const logOut = () => {
-//     loggedUser = JSON.parse(localStorage.getItem('loggedin'))
-//     if (loggedUser) {
-//         localStorage.removeItem("loggedin")
-
-
-//     }
-// }
-
-// logout.addEventListener('click', logOut)
-
-
-
-// checkUser()
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const loginButton = document.querySelector('.login-button');
-//     const myAccount = document.querySelector('.myAccount');
-
-//     Eğer loginButton varsa ve myAccount varsa
-//     if (loginButton && myAccount) {
-//         loginButton'a tıklama olayı ekle
-//         loginButton.addEventListener('click', function () {
-//             myAccount'ın display özelliğini kontrol et ve değiştir
-//             if (myAccount.style.display === 'none' || myAccount.style.display === '') {
-//                 myAccount.style.display = 'block';
-//             } else {
-//                 myAccount.style.display = 'none';
-//             }
-//         });
-//     }
-// });

@@ -50,6 +50,61 @@ nav .kargoNav .nav-underline li a:hover {
   cursor: pointer;
   color: #7b5ce1;
 }
+nav .kargoNav .loginDiv {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .kargoNav .loginDiv .login-button {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+nav .kargoNav .loginDiv .myAccount {
+  display: none;
+  width: 7%;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout button {
+  border: none;
+  background-color: transparent;
+  color: #606070;
+  font-size: 14px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout button:hover {
+  background-color: #e4e4e6;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout button i {
+  font-size: 14px;
+}
 
 header {
   width: 100%;
@@ -82,7 +137,6 @@ header nav .navDiv .collapseDiv ul {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  border-right: 1px solid grey;
 }
 header nav .navDiv .collapseDiv ul li {
   list-style: none;
@@ -105,6 +159,7 @@ header nav .navDiv .headButton {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-left: 1px solid rgb(211, 211, 211);
 }
 header nav .navDiv .headButton a {
   font-weight: 500;
@@ -221,7 +276,11 @@ header nav .navDiv .headButton button {
   max-width: 100%;
 }
 
-#myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel button, #myCarousel .carousel-item .mask img {
+#myCarousel h4,
+#myCarousel p,
+#myCarousel a,
+#myCarousel button,
+#myCarousel .carousel-item .mask img {
   -webkit-animation-duration: 1s;
   animation-duration: 1.2s;
   -webkit-animation-fill-mode: both;
@@ -244,7 +303,8 @@ header nav .navDiv .headButton button {
   background-size: cover;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   height: 40px;
   width: 40px;
   padding: 12px;
@@ -278,27 +338,42 @@ header nav .navDiv .headButton button {
   transition-property: opacity;
 }
 
-.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right,
+.carousel-fade .carousel-item.active {
   opacity: 1;
 }
 
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-right.active {
   opacity: 0;
 }
 
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item-prev.active,
+.carousel-fade .carousel-item.active {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 @supports (transform-style: preserve-3d) {
-  .carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+  .carousel-fade .carousel-item-left.active,
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item-prev.active,
+  .carousel-fade .carousel-item.active {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item-prev.active,
+.carousel-fade .carousel-item.active {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -412,15 +487,14 @@ header nav .navDiv .headButton button {
 #servicesMain .services:hover {
   filter: drop-shadow(0px 0px 9px rgba(44, 44, 44, 0.2784313725));
 }
-
-.servicesText {
+#servicesMain .services .servicesText {
   width: 100%;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
-.servicesText h1 {
+#servicesMain .services .servicesText h1 {
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
@@ -431,7 +505,7 @@ header nav .navDiv .headButton button {
   font-family: Nunito-ExtraBold;
   letter-spacing: 0;
 }
-.servicesText p {
+#servicesMain .services .servicesText p {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -442,7 +516,7 @@ header nav .navDiv .headButton button {
   font-family: Nunito-ExtraBold;
   letter-spacing: 0;
 }
-.servicesText button {
+#servicesMain .services .servicesText button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,14 +528,13 @@ header nav .navDiv .headButton button {
   margin-top: 30px;
   border: none;
 }
-
-.servicesİmg {
+#servicesMain .services .servicesİmg {
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.servicesİmg img {
+#servicesMain .services .servicesİmg img {
   width: 60%;
 }
 

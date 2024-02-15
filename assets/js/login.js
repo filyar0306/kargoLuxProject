@@ -37,7 +37,7 @@ loginForm.addEventListener('submit', async (e) => {
     if (!user) {
       throw new Error('Invalid email or password.');
     }
-
+    localStorage.setItem("loggedin", JSON.stringify(user))
     window.location.href = 'index.html';
 
   } catch (error) {

@@ -101,7 +101,7 @@
             </ul>
           </div>
           <div class="headButton">
-            <span>Giriş et</span>
+            <a style="text-decoration: none;" href="login.html"><span>Giriş et</span></a>
             <button>Qeydiyyat</button>
           </div>
         </div>
@@ -165,12 +165,12 @@
         </div>
       </div>
     </section>
-    <section id="xidmetMain">
+    <section id="servicesMain">
       <div class="container">
         <div class="row">
           <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
-            <div style="background-color: transparent" class="xidmet">
-              <div class="xidmetText">
+            <div style="background-color: transparent" class="services">
+              <div class="servicesText">
                 <h1
                   style="
                     font-weight: 700;
@@ -193,8 +193,8 @@
             </div>
           </div>
           <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
-            <div class="xidmet">
-              <div class="xidmetText">
+            <div class="services">
+              <div class="servicesText">
                 <h1>Həvalə et xidməti</h1>
                 <p>
                   Türkiyə saytlarından alış-veriş edərkən çətinlik çəkirsinizsə
@@ -203,14 +203,14 @@
                 </p>
                 <button>Ətraflı</button>
               </div>
-              <div class="xidmetİmg">
+              <div class="servicesİmg">
                 <img src="./assets/img/hevale.png" alt="" />
               </div>
             </div>
           </div>
           <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
-            <div class="xidmet">
-              <div class="xidmetText">
+            <div class="services">
+              <div class="servicesText">
                 <h1>Təcili sifariş xidməti</h1>
                 <p>
                   Sifarişlərin növbədən kənar həyata keçirilməsi üçün “Təcili
@@ -219,14 +219,14 @@
                 </p>
                 <button>Ətraflı</button>
               </div>
-              <div class="xidmetİmg">
+              <div class="servicesİmg">
                 <img src="./assets/img/tecili.svg" alt="" />
               </div>
             </div>
           </div>
           <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
-            <div class="xidmet">
-              <div class="xidmetText">
+            <div class="services">
+              <div class="servicesText">
                 <h1>Ölkədaxili kuryer xidməti</h1>
                 <p>
                   İndi sifarişlərinizi əldə etmək daha asan oldu. Göstərdiyimiz
@@ -235,7 +235,7 @@
                 </p>
                 <button>Ətraflı</button>
               </div>
-              <div class="xidmetİmg">
+              <div class="servicesİmg">
                 <img src="./assets/img/Kuryersifarişet.png" alt="" />
               </div>
             </div>
@@ -382,6 +382,65 @@
         </div>
       </div>
     </section>
+
+    <section id="calculator">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
+            <div class="calculatorMain">
+              <div class="calculator-container">
+                <form id="calculator-form">
+                  <label for="package-type">Paket Tipi</label>
+                  <select id="package-type" name="package-type" required>
+                    <option value="standard">Standart</option>
+                    <option value="liquid">Maye</option>
+                  </select>
+
+                  <label for="city">Şehir</label>
+                  <select id="city" name="city" required>
+                    <option value="turkey">Turkey</option>
+                    <option value="usa">USA</option>
+                  </select>
+
+                  <label for="length">Uzunluk (cm)</label>
+                  <input type="number" id="length" name="length" required />
+
+                  <label for="width">En (cm)</label>
+                  <input type="number" id="width" name="width" required />
+
+                  <label for="volume">Hacim (cm³)</label>
+                  <input type="number" id="volume" name="volume" required />
+
+                  <label for="weight">Ağırlık (kg)</label>
+                  <input type="number" id="weight" name="weight" required />
+
+                  <button type="button" onclick="calculateShipping()">
+                    Calculate
+                  </button>
+                  <button type="button" onclick="resetCalculator()">
+                    Reset
+                  </button>
+                </form>
+
+                <div id="result"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12">
+            <div class="calculatorMain">
+              <h1>Kalkulyator</h1>
+              <p>
+                Bağlamanın hər hansı bir tərəfinin ölçüsü (Türkiyə) 60 sm
+                (Amerika) 80 sm və daha çox olarsa, bağlamanın həm həcm, həm də
+                fiziki çəkisi hesablanır. Hansı çəki yüksək olarsa, daşınma
+                haqqı ona əsasən hesablanır.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section id="new">
       <div class="container">

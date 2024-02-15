@@ -155,13 +155,11 @@ header {
 }
 
 #faq {
-  
   min-height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
   .faq-title {
-    
     b {
       font-size: 35px;
       text-align: center;
@@ -206,11 +204,11 @@ header {
       .answer {
         padding-left: 6rem;
         padding-right: 2rem;
-        p{
-            font-size: 14px;
-            color: #7b7b93;
+        p {
+          font-size: 14px;
+          color: #7b7b93;
         }
-       
+
         a {
           color: #fd475d;
         }

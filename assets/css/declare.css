@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -50,6 +49,61 @@ nav .kargoNav .nav-underline li a:hover {
   cursor: pointer;
   color: #7b5ce1;
 }
+nav .kargoNav .loginDiv {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .kargoNav .loginDiv .login-button {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+nav .kargoNav .loginDiv .myAccount {
+  display: none;
+  width: 7%;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout button {
+  border: none;
+  background-color: transparent;
+  color: #606070;
+  font-size: 14px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout button:hover {
+  background-color: #e4e4e6;
+}
+nav .kargoNav .loginDiv .myAccount .userLogout button i {
+  font-size: 14px;
+}
 
 header {
   width: 100%;
@@ -82,7 +136,6 @@ header nav .navDiv .collapseDiv ul {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  border-right: 1px solid grey;
 }
 header nav .navDiv .collapseDiv ul li {
   list-style: none;
@@ -105,6 +158,7 @@ header nav .navDiv .headButton {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-left: 1px solid rgb(211, 211, 211);
 }
 header nav .navDiv .headButton a {
   font-weight: 500;
@@ -140,331 +194,8 @@ header nav .navDiv .headButton button {
     width: 100%;
   }
 }
-#caruselMain {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgb(211, 211, 211);
-}
-#caruselMain #myCarousel .carousel-item .mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-  padding-top: 5rem;
-}
-#caruselMain #myCarousel .carousel-item .mask h4 {
-  font-size: 45px;
-  color: #7b5ce1;
-  line-height: 45px;
-  letter-spacing: 0.5px;
-  font-weight: 700;
-  font-family: Nunito-ExtraBold;
-  margin-left: 1rem;
-  width: 80%;
-}
-#caruselMain #myCarousel .carousel-item .mask h4 span {
-  color: #ff6d67;
-}
-#caruselMain #myCarousel .carousel-item .mask p {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  font-family: Nunito-ExtraBold;
-  color: #74717c;
-  margin-left: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 70%;
-}
-#caruselMain #myCarousel .carousel-item .mask button {
-  margin-left: 1rem;
-  justify-content: center;
-  width: 151px;
-  height: 52px;
-  border-radius: 10px;
-  background-color: #ff6d67;
-  font-size: 16px;
-  border: none;
-  text-align: center;
-  color: #fff;
-  align-items: center;
-}
-#caruselMain #myCarousel .carousel-item .mask button:hover {
-  cursor: pointer;
-  background-color: #ff7974;
-}
-
-#myCarousel .carousel-item h4 {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-
-#myCarousel .carousel-item p {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-}
-
-#myCarousel .carousel-item a {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-#myCarousel .carousel-item .mask img {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-#myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel button, #myCarousel .carousel-item .mask img {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1.2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-#myCarousel .container {
-  max-width: 1430px;
-}
-
-#myCarousel .carousel-item {
-  height: 100%;
-  min-height: 550px;
-}
-
-#myCarousel {
-  position: relative;
-  z-index: 1;
-  background-color: transparent center center no-repeat;
-  background-size: cover;
-}
-
-.carousel-control-next, .carousel-control-prev {
-  height: 40px;
-  width: 40px;
-  padding: 12px;
-  top: 50%;
-  bottom: auto;
-  transform: translateY(-50%);
-  background-color: transparent;
-}
-
-.carousel-item {
-  position: relative;
-  display: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  transition: -webkit-transform 0.6s ease;
-  transition: transform 0.6s ease;
-  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-}
-
-.carousel-fade .carousel-item {
-  opacity: 0;
-  -webkit-transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
-  opacity: 0;
-}
-
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
-
-@supports (transform-style: preserve-3d) {
-  .carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.slideInRight {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-}
-
-#servicesMain {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgb(211, 211, 211);
-  min-height: 900px;
-}
-#servicesMain .services {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 20px;
-  min-height: 400px;
-  background-color: #f8f7fe;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-  transition: 0.4s;
-}
-#servicesMain .services:hover {
-  filter: drop-shadow(0px 0px 9px rgba(44, 44, 44, 0.2784313725));
-}
-#servicesMain .services .servicesText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-}
-#servicesMain .services .servicesText h1 {
-  font-weight: 700;
-  font-size: 20px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: normal;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-}
-#servicesMain .services .servicesText p {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  color: rgb(40, 33, 65);
-  line-height: 22px;
-  text-decoration: none;
-  transform: none;
-  font-family: Nunito-ExtraBold;
-  letter-spacing: 0;
-}
-#servicesMain .services .servicesText button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 52px;
-  background-color: #ff6d67;
-  color: #fff;
-  border-radius: 10px;
-  margin-top: 30px;
-  border: none;
-}
-#servicesMain .services .servicesİmg {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-#servicesMain .services .servicesİmg img {
-  width: 60%;
-}
-
 #dashboard {
-  min-height: 1000px;
+  min-height: 800px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -472,10 +203,10 @@ header nav .navDiv .headButton button {
 }
 #dashboard .dashboard-list {
   background-color: #fff;
-  min-height: 755px;
+  min-height: 700px;
   padding: 1rem;
-  margin: 1rem;
   float: left;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -486,10 +217,16 @@ header nav .navDiv .headButton button {
 #dashboard .dashboard-list .userAbout {
   min-height: 100px;
   width: 100%;
-  background-color: #947AE7;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2c2c51;
+  background: #fef5e9;
 }
 #dashboard .dashboard-list .declaration {
-  background-color: aqua;
+  background-color: #7b5ce1;
   width: 100%;
   min-height: 50px;
   font-family: "SegoeSemiBold", sans-serif;
@@ -497,8 +234,8 @@ header nav .navDiv .headButton button {
   align-items: center;
   padding: 10px;
   gap: 15px;
-  background-color: #f4f8fb;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   font-style: normal;
   color: #2c2c51;
   font-weight: 600;
@@ -508,7 +245,7 @@ header nav .navDiv .headButton button {
   text-decoration: none;
 }
 #dashboard .dashboard-list .declaration:hover {
-  background-color: #FEF5E9;
+  background-color: #fef5e9;
 }
 #dashboard .dashboard-list .declaration i {
   width: 26px;
@@ -517,12 +254,12 @@ header nav .navDiv .headButton button {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #655B74;
+  background-color: #fd475d;
   color: #fff;
 }
 #dashboard .dashboard-list .invite {
   min-height: 60px;
-  border-bottom: 1px solid #655B74;
+  border-bottom: 1px solid #fd475d;
   width: 100%;
   display: flex;
   align-items: center;
@@ -533,12 +270,12 @@ header nav .navDiv .headButton button {
   gap: 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #655B74;
+  color: #2c2c51;
   text-decoration: none;
 }
 #dashboard .dashboard-list .invite i {
   font-size: 16px;
-  color: #655B74;
+  color: #2c2c51;
 }
 #dashboard .dashboard-list .store {
   width: 100%;
@@ -578,10 +315,10 @@ header nav .navDiv .headButton button {
   text-decoration: none;
 }
 #dashboard .dashboard-list .store ul li a:hover {
-  color: #FD475D;
+  color: #7b5ce1;
 }
 #dashboard .dashboard-list .store ul li a i {
-  font-size: 12px;
+  font-size: 14px;
 }
 #dashboard .dashboard-list .store ul li a button {
   border: none;
@@ -596,22 +333,22 @@ header nav .navDiv .headButton button {
   transition: 0.3s ease;
 }
 #dashboard .dashboard-list .store ul li a button:hover {
-  color: #FD475D;
+  color: #fd475d;
 }
 #dashboard .packings {
-  min-height: 755px;
-  padding: 1.2rem;
+  min-height: 700px;
+  margin: 1.2rem;
   display: flex;
   justify-content: center;
 }
 #dashboard .packings .packings-about {
   display: flex;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   min-height: 120px;
+  padding: 0rem 2rem;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0rem 2rem;
 }
 #dashboard .packings .packings-about .declare-value {
   display: flex;
@@ -628,29 +365,29 @@ header nav .navDiv .headButton button {
   border: 1px solid #fff;
 }
 #dashboard .packings .packings-about .declare-value:hover .declare-about span {
-  color: #FD475D;
+  color: #7b5ce1;
 }
 #dashboard .packings .packings-about .declare-value:hover .declare-about p {
-  color: #FD475D;
+  color: #7b5ce1;
 }
 #dashboard .packings .packings-about .declare-value:hover .money span {
-  color: #FD475D;
+  color: #7b5ce1;
 }
 #dashboard .packings .packings-about .declare-value:hover .money p {
-  color: #FD475D;
+  color: #7b5ce1;
 }
 #dashboard .packings .packings-about .declare-value:hover .box span {
-  color: #FD475D;
+  color: #7b5ce1;
 }
 #dashboard .packings .packings-about .declare-value:hover .box p {
-  color: #FD475D;
+  color: #7b5ce1;
 }
 #dashboard .packings .packings-about .declare-value i {
   width: 40px;
   height: 40px;
   color: #fff;
   border-radius: 50%;
-  background-color: #655B74;
+  background-color: #655c74;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -673,22 +410,25 @@ header nav .navDiv .headButton button {
   font-weight: 500;
 }
 #dashboard .packings .packings-about .declare-value .moneyIcon {
-  background-color: #655B74;
+  background-color: #655c74;
 }
 #dashboard .packings .packings-about .declare-value .boxIcon {
-  background-color: #655B74;
+  background-color: #655c74;
 }
 #dashboard .packings .myOrders {
   background-color: transparent;
   width: 100%;
   min-height: 500px;
   border-radius: 10px;
-  padding: 1rem;
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
 }
-#dashboard .packings .myOrders h2 {
+#dashboard .packings .myOrders a {
+  width: 100%;
+  text-decoration: none;
+}
+#dashboard .packings .myOrders a h2 {
   font-size: 21px;
   color: #2c2c51;
   font-family: SegoeSemiBold, sans-serif;
@@ -696,14 +436,10 @@ header nav .navDiv .headButton button {
   min-height: 70px;
   display: flex;
   align-items: center;
-  padding: 1rem;
 }
 #dashboard .packings .myOrders .declare-customer {
-  width: 38%;
   gap: 10px;
-  flex-direction: column;
   min-height: 330px;
-  background-color: #fff;
   padding: 1rem;
   gap: 1rem;
   display: flex;
@@ -716,12 +452,13 @@ header nav .navDiv .headButton button {
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  padding-top: 20px;
+  background-color: #fff;
+  padding: 1rem 1rem;
 }
 #dashboard .packings .myOrders .declare-customer .declare h6 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
-  color: #FD475D;
+  color: #2c2c51;
   gap: 30px;
   display: flex;
   align-items: center;
@@ -729,10 +466,10 @@ header nav .navDiv .headButton button {
 }
 #dashboard .packings .myOrders .declare-customer .declare h6 .declareButton {
   border: none;
-  background-color: #4e3d68;
+  background-color: #fd475d;
   color: #fff;
-  width: 35%;
   height: 30px;
+  width: 80px;
   font-weight: 500;
   border-radius: 5px;
   font-size: 14px;
@@ -740,6 +477,11 @@ header nav .navDiv .headButton button {
 }
 #dashboard .packings .myOrders .declare-customer .declare h6 .declareButton:hover {
   background-color: #e34659;
+}
+#dashboard .packings .myOrders .declare-customer .declare .status {
+  color: red;
+  font-size: 13px;
+  font-weight: 500;
 }
 #dashboard .packings .myOrders .declare-customer .declare p {
   font-size: 11px;
@@ -761,19 +503,18 @@ header nav .navDiv .headButton button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FD475D;
+  color: #2c2c51;
   font-weight: 700;
 }
 #dashboard .packings .myOrders .declare-customer .declare .whereButton {
-  border: 1px solid #f11818;
+  border: 1px solid #fff;
   border-radius: 5px;
   font-size: 11px;
   font-weight: 700;
   background-color: #fff;
   color: black;
   height: 30px;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  box-shadow: 0 12px 24px 0 rgba(44, 44, 81, 0.06);
   width: 100%;
 }
 
@@ -891,5 +632,49 @@ footer .end span {
 @media screen and (max-width: 300px) {
   #new .newSec {
     text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  #dashboard .packings .packings-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #dashboard .packings .packings-about .declare-value {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 200px;
+  }
+  #dashboard .packings .myOrders {
+    width: 100%;
+  }
+  #dashboard .packings .myOrders a {
+    width: 100%;
+  }
+  #dashboard .packings .myOrders .declare-customer {
+    width: 100%;
+  }
+  #dashboard .packings .myOrders .declare-customer .declare h6 .declareButton {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #dashboard .packings .myOrders {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #dashboard .packings .myOrders a h2 {
+    width: 70%;
+    display: none;
+  }
+  #dashboard .packings .myOrders a {
+    width: 100%;
+  }
+  #dashboard .packings .myOrders .declare-customer {
+    width: 100%;
   }
 }
