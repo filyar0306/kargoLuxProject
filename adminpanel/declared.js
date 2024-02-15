@@ -97,7 +97,7 @@ const renderData = async () => {
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item gumruk" href="#" data-product-id="${item.id}">Gömrük</a></li>
                             <li><a class="dropdown-item cesidleme" href="#" data-product-id="${item.id}">Çeşidləmə</a></li>
-                            <li><a class="dropdown-item yerliAnbar" href="#" data-product-id="${item.id}">Yerli anbar</a></li>
+                            <li><a class="dropdown-item yerliAnbar" href="#" data-product-id="${item.id}">Teslimat</a></li>
                         </ul>
                     </div>
                 </td>

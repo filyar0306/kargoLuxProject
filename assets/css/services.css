@@ -172,9 +172,6 @@ header nav .navDiv .headButton button {
   flex-direction: column;
   padding: 10px 10px;
 }
-#delivery .deliverySummary .deliveryText:hover {
-  box-shadow: 0 10px 10px -2px #9d87e7;
-}
 #delivery .deliverySummary .deliveryText h2 {
   font-weight: 600;
   font-size: 25px;

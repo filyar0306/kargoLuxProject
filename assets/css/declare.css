@@ -439,7 +439,9 @@ header nav .navDiv .headButton button {
 }
 #dashboard .packings .myOrders .declare-customer {
   gap: 10px;
+  width: 38%;
   min-height: 330px;
+  flex-direction: column;
   padding: 1rem;
   gap: 1rem;
   display: flex;

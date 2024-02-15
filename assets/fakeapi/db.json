@@ -110,6 +110,12 @@
       "marka": "Bershka",
       "image": "https://cdn.dsmcdn.com/ty1012/product/media/images/prod/SPM/PIM/20231009/13/327ab57a-76e6-3e16-8ac2-ed3c554f1609/1_org_zoom.jpg",
       "price": "990"
+    },
+    {
+      "id": "13",
+      "marka": "Bershka",
+      "image": "https://cdn.dsmcdn.com/ty1012/product/media/images/prod/SPM/PIM/20231009/13/327ab57a-76e6-3e16-8ac2-ed3c554f1609/1_org_zoom.jpg",
+      "price": "990"
     }
   ],
   "registers": [
@@ -387,7 +393,6 @@
     }
   ],
   "comments": [
-
     {
       "id": "6dc3",
       "name": "filyar",
@@ -417,7 +422,7 @@
       "email": "filyr@gmail.com",
       "image": "https://lh6.googleusercontent.com/tHasn7j1f-SNODW0GkONVGUCgOGolhLVcQ8C-YOazQfEKK8oWI1iZ8-1vKe5uc4xNL74_uZV218sqF43mzFuMxTQFGFAi-IdZghvEcWz3jNWV10lOkB_kDj4Fpe6FB_4qD_h_z1k",
       "id": "1",
-      "status": "Gömrük"
+      "status": "Teslimat"
     },
     {
       "declared": true,
